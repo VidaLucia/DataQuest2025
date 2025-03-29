@@ -1,0 +1,18 @@
+# Environment & API Keys
+API.env
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+
+# VS Code or PyCharm settings
+.vscode/
+.idea/
+
+# Virtual environments
+venv/
+env/
+
+# macOS file
+.DS_Store
