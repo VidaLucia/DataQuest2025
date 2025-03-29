@@ -32,9 +32,10 @@ def extract_schedule_info(text):
 
     Guidelines:
     - If the time is vague or not given, return "N/A"
-    - If weight is not given, return 0 or omit
+    - If weight is not given, use your best judgement based on previous assignments of similar name and if not additional information is available return 0
+    - The total weight of everything should add up to 100 unless there are bonus marks mentioned
     - If schedule is not mentioned, return an empty list
-    - If schedule has no time allocated assume it is asynchronous and do not include it
+    - If schedule has no date and location do not include it in the schedule section
 
     Format the output as JSON:
     {{
