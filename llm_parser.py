@@ -36,7 +36,7 @@ def extract_schedule_info(text):
     - If schedule is not mentioned, return an empty list
     - If schedule has no time allocated assume it is asynchronous and do not include it
 
-    📦 Format the output as JSON:
+    Format the output as JSON:
     {{
       "assignments": [...],
       "tests": [...],
