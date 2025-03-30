@@ -58,6 +58,7 @@ pip install -r requirements.txt
 ```bash
 python main.py
 ```
+7. click 1, followed by 2 to set up all JSON files
 ### Command Lines
 ```
 Select 1. Compiles the PDFs using openai's 4-o model into json files
