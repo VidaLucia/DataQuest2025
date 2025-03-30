@@ -19,6 +19,7 @@ def extract_assignment_info(text):
     - difficulty (estimated from 1 to 10, where 1 = very easy and 10 = very difficult)
 
     Guidelines:
+    - the title should be as descriptive as possible from the information given
     - If the time is vague or not given, return "N/A"
     - Estimate difficulty based on clues in the text (length, instructions, weight, or description) 
     - there should be a negative weight shift on difficulty for assignments that only require writing

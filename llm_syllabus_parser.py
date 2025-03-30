@@ -18,6 +18,7 @@ def extract_schedule_info(text):
         - due_date (YYYY-MM-DD)
         - due_time (HH:MM or "N/A" if not clearly specified)
         - weight (percentage of final grade, e.g. 20)
+        - difficulty (have this set to a default of 0) 
 
     2. A list of tests:
         - title
