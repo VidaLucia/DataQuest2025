@@ -2,7 +2,8 @@ from pdf_parser import extract_text_from_pdf
 from llm_syllabus_parser import extract_schedule_info
 from llm_assignment_parser import extract_assignment_info  # You'll need to create this
 from calendar_generator import export_json_to_ics
-from time_blocker import generate_time_blocks
+from block_generator import generate_time_blocks
+
 import json
 import os
 
@@ -108,20 +109,21 @@ def run_manual_matching():
         except ValueError:
             print("Invalid input. Please enter a number or 'q'.")
 
-
 def match_assignments_interactive(course_path: str) -> dict:
-    """Match assignments interactively with a side-by-side interface."""
-    
+    """Match assignments interactively and update the original syllabus file in-place."""
+
     # Load syllabus JSON
     syllabus_dir = os.path.join(course_path, "Syllabus", "parsed")
+    syllabus_file = None
     syllabus_json = None
 
     for file in os.listdir(syllabus_dir):
         if file.endswith("_parsed.json"):
-            with open(os.path.join(syllabus_dir, file), 'r') as f:
+            syllabus_file = os.path.join(syllabus_dir, file)
+            with open(syllabus_file, 'r') as f:
                 syllabus_json = json.load(f)
-                break
-    
+            break
+
     if not syllabus_json or 'assignments' not in syllabus_json:
         print("No valid syllabus JSON found")
         return None
@@ -131,86 +133,76 @@ def match_assignments_interactive(course_path: str) -> dict:
     assignment_files = []
     if os.path.exists(assignments_dir):
         for file in os.listdir(assignments_dir):
-            
             if file.endswith("_parsed.json"):
                 with open(os.path.join(assignments_dir, file), 'r') as f:
                     assignment_json = json.load(f)
                     assignment_files.append((file, assignment_json))
-    if not assignment_files:
-        print("No assignment JSONs found to match")
-        return syllabus_json
 
-    # Track which assignments have been matched
     matched_assignments = set()
-    
-    while True:
-        print("\n=== Assignment Matching Interface ===")
-        print("\nSyllabus Assignments:")
-        for i, assignment in enumerate(syllabus_json['assignments'], 1):
-            print(f"{i}. {assignment.get('title', 'Untitled')} "
-                  f"(Due: {assignment.get('due_date', 'Not specified')})")
 
-        print("\nParsed Assignment Files:")
+    if assignment_files:
+        while True:
+            print("\n=== Assignment Matching Interface ===")
+            print("\nSyllabus Assignments:")
+            for i, assignment in enumerate(syllabus_json['assignments'], 1):
+                print(f"{i}. {assignment.get('title', 'Untitled')} "
+                      f"(Due: {assignment.get('due_date', 'Not specified')})")
 
-
-        for i, (filename, json_data) in enumerate(assignment_files, 1):
-            if isinstance(json_data, dict) and 'assignment' in json_data:
-                assignments = json_data['assignment']
-                if isinstance(assignments, list):
-                    for assignment in assignments:
-                        title = assignment.get('title', 'Untitled')
-                        due_date = assignment.get('due_date', 'Not specified')
-                        print(f"{i}. {filename}: {title} (Due: {due_date})")
+            print("\nParsed Assignment Files:")
+            for i, (filename, json_data) in enumerate(assignment_files, 1):
+                if isinstance(json_data, dict) and 'assignment' in json_data:
+                    assignments = json_data['assignment']
+                    if isinstance(assignments, list):
+                        for assignment in assignments:
+                            title = assignment.get('title', 'Untitled')
+                            due_date = assignment.get('due_date', 'Not specified')
+                            print(f"{i}. {filename}: {title} (Due: {due_date})")
+                    else:
+                        print(f"{i}. {filename} has 'assignment' key but it's not a list.")
                 else:
-                    print(f"{i}. {filename} has 'assignment' key but it's not a list.")
-            else:
-                print(f"{i}. {filename} skipped (no valid 'assignment' key or not a dict).")
+                    print(f"{i}. {filename} skipped (no valid 'assignment' key or not a dict).")
 
-        print("\nEnter two numbers to match (e.g., '1 2' matches syllabus item 1 with assignment 2)")
-        print("Or enter 'q' to finish matching")
-        
-        choice = input("\nYour choice: ").strip().lower()
-        
-        if choice == 'q':
-            break
-            
-        try:
-            syllabus_idx, assignment_idx = map(int, choice.split())
-            if (1 <= syllabus_idx <= len(syllabus_json['assignments']) and 
-                1 <= assignment_idx <= len(assignment_files)):
-                
-                # Get the assignment data
-                _, assignment_json = assignment_files[assignment_idx - 1]
-                assignments = assignment_json.get('assignment', [])
+            print("\nEnter two numbers to match (e.g., '1 2' matches syllabus item 1 with assignment 2)")
+            print("Or enter 'q' to finish matching")
 
-                if assignments:
-                    parsed_assignment = assignments[0]
-                    syllabus_assignment = syllabus_json['assignments'][syllabus_idx - 1]
+            choice = input("\nYour choice: ").strip().lower()
 
-                    # Only update title and difficulty
-                    # Update all relevant fields
-                    for field in ['title', 'difficulty', 'weight', 'due_time']:
-                        if field in parsed_assignment:
-                            syllabus_assignment[field] = parsed_assignment[field]
+            if choice == 'q':
+                break
 
-                    matched_assignments.add(assignment_idx)
-                    print("\n Successfully matched assignments!")
+            try:
+                syllabus_idx, assignment_idx = map(int, choice.split())
+                if (1 <= syllabus_idx <= len(syllabus_json['assignments']) and
+                    1 <= assignment_idx <= len(assignment_files)):
 
+                    _, assignment_json = assignment_files[assignment_idx - 1]
+                    assignments = assignment_json.get('assignment', [])
+
+                    if assignments:
+                        parsed_assignment = assignments[0]
+                        syllabus_assignment = syllabus_json['assignments'][syllabus_idx - 1]
+
+                        for field in ['title', 'difficulty', 'weight', 'due_time']:
+                            if field in parsed_assignment:
+                                syllabus_assignment[field] = parsed_assignment[field]
+
+                        matched_assignments.add(assignment_idx)
+                        print("\nSuccessfully matched assignments!")
+                    else:
+                        print("\nNo assignment data found in the selected file")
                 else:
-                    print("\n No assignment data found in the selected file")
-            else:
-                print("\n Invalid assignment numbers")
-        except (ValueError, IndexError):
-            print("\n Invalid input format. Please enter two numbers separated by space")
+                    print("\nInvalid assignment numbers")
+            except (ValueError, IndexError):
+                print("\nInvalid input format. Please enter two numbers separated by space")
+    else:
+        print("No assignment JSONs found to match. Proceeding to save syllabus as-is.")
 
-    # Save updated syllabus JSON
-    output_path = ("data/user_pdfs/syllabus_matched.json")
-    with open(output_path, 'w', encoding='utf-8') as f:
+    # Save back to original syllabus file
+    with open(syllabus_file, 'w', encoding='utf-8') as f:
         json.dump(syllabus_json, f, indent=4, ensure_ascii=False)
-    print(f"\nSaved matched assignments to: {output_path}")
-    
-    return syllabus_json
+    print(f"\nUpdated original syllabus file: {syllabus_file}")
 
+    return syllabus_json
 def edit_schedule():
     path = "data/user_pdfs/syllabus_matched.json"
 
@@ -241,7 +233,7 @@ def edit_schedule():
         if section_choice == '1':
             section_name = "Assignments"
             key = "assignments"
-            fields = ["title", "due_date", "due_time"]
+            fields = ["title", "due_date", "due_time","weight","difficulty"]
         elif section_choice == '2':
             section_name = "Tests"
             key = "tests"
@@ -298,6 +290,73 @@ def edit_schedule():
         with open(path, "w", encoding="utf-8") as f:
             json.dump(data, f, indent=4, ensure_ascii=False)
             print("Saved changes.")
+def merge_json(courses_dir: str, output_path: str = "data/user_pdfs/syllabus_matched.json") -> None:
+    """Merge all syllabus_parsed.json files from each course into one JSON file."""
+    merged = {
+        'assignments': [],
+        'tests': [],
+        'schedule': []
+    }
+
+    for course_name in os.listdir(courses_dir):
+        course_path = os.path.join(courses_dir, course_name)
+        syllabus_dir = os.path.join(course_path, "Syllabus", "parsed")
+
+        if not os.path.exists(syllabus_dir):
+            continue
+
+        for file in os.listdir(syllabus_dir):
+            if file.endswith("_parsed.json"):
+                full_path = os.path.join(syllabus_dir, file)
+                try:
+                    with open(full_path, 'r', encoding='utf-8') as f:
+                        syllabus_data = json.load(f)
+
+                        # Merge assignments
+                        for assignment in syllabus_data.get("assignments", []):
+                            assignment["course"] = course_name
+                            merged["assignments"].append(assignment)
+
+                        # Merge tests
+                        for test in syllabus_data.get("tests", []):
+                            test["course"] = course_name
+                            merged["tests"].append(test)
+
+                        # Merge schedule
+                        for sched in syllabus_data.get("schedule", []):
+                            sched["course"] = course_name
+                            merged["schedule"].append(sched)
+
+                except Exception as e:
+                    print(f"⚠️ Failed to load {full_path}: {e}")
+
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+    with open(output_path, 'w', encoding='utf-8') as f:
+        json.dump(merged, f, indent=4, ensure_ascii=False)
+
+    print(f"\n✅ Merged syllabus saved to: {output_path}")
+
+def merge_blocks_into_course_json(course_path, blocks_path, output_path=None):
+    # Load syllabus_matched.json
+    with open(course_path, 'r') as f:
+        course_data = json.load(f)
+
+    # Load generated_blocks.json
+    with open(blocks_path, 'r') as f:
+        blocks_data = json.load(f)
+
+    # Add the blocks into the course data
+    course_data["study_blocks"] = blocks_data.get("blocks", [])
+
+    # Determine output path
+    if not output_path:
+        output_path = course_path  # overwrite by default
+
+    # Save updated JSON
+    with open(output_path, 'w') as f:
+        json.dump(course_data, f, indent=4, ensure_ascii=False)
+
+    print(f"Merged and saved to {output_path}")
 
 if __name__ == "__main__":
     while True:
@@ -306,6 +365,7 @@ if __name__ == "__main__":
         print("2. Manually match assignments")
         print("3. Edit Schedule")
         print("4. Compile into Calender")
+        print("5. Allocate Study Time")
         print("q. Quit")
         
         choice = input("\nSelect option: ").strip().lower()
@@ -317,11 +377,48 @@ if __name__ == "__main__":
             print("\nFinished processing PDFs")
         elif choice == '2':
             run_manual_matching()
+            merge_json("data/user_pdfs")
         elif choice == '3':
             edit_schedule()
         elif choice == '4':
             with open("data/user_pdfs/syllabus_matched.json", "r") as f:  # Replace with your actual file
                 data = json.load(f)
             export_json_to_ics(data,"course_calendar.ics")
+        elif choice == '5':
+            syllabus_path = "data/user_pdfs/syllabus_matched.json"
+            blocks_path = "generated_blocks.json"
+
+            # Load existing course data
+            with open(syllabus_path, "r") as f:
+                course_data = json.load(f)
+
+            # Generate study blocks via LLM
+            blocks_str = generate_time_blocks(course_data)
+
+            # Save to generated_blocks.json
+            try:
+
+                blocks_json = blocks_str
+
+                # Save to file
+                with open(blocks_path, "w", encoding="utf-8") as f:
+                    json.dump(blocks_json, f, indent=4, ensure_ascii=False)
+                print(f"Saved study blocks to {blocks_path}")
+
+            except json.JSONDecodeError as e:
+                print("Failed to parse LLM output into JSON.")
+                continue
+
+            # Merge study blocks into syllabus_matched.json
+            merge_blocks_into_course_json(
+                syllabus_path,
+                blocks_path
+            )
+
+            # Reload merged data and export to .ics
+            with open(syllabus_path, "r") as f:
+                merged_data = json.load(f)
+            export_json_to_ics(merged_data, "course_calendar.ics")
+
         else:
             print("Invalid option. Please try again.")

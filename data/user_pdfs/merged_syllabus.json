@@ -1,0 +1,148 @@
+{
+    "assignments": [
+        {
+            "title": "Critical Appraisal 1 (group or individual)",
+            "due_date": "2025-01-20",
+            "due_time": "N/A",
+            "weight": 5,
+            "difficulty": 6,
+            "course": "Course2"
+        },
+        {
+            "title": "Critical Appraisal 2 (Individual)",
+            "due_date": "2025-02-03",
+            "due_time": "N/A",
+            "weight": 10,
+            "difficulty": 6,
+            "course": "Course2"
+        },
+        {
+            "title": "MEDSCIEN 4931G Case Study: Interdisciplinarity and Diversity in Research",
+            "due_date": "2025-01-14",
+            "due_time": "N/A",
+            "weight": 15,
+            "difficulty": 6,
+            "course": "Course2"
+        },
+        {
+            "title": "Case Study 2: Academic Integrity",
+            "due_date": "2025-01-28",
+            "due_time": "12:00",
+            "weight": 15,
+            "difficulty": 6,
+            "course": "Course2"
+        },
+        {
+            "title": "Case Study 3: Science Communication",
+            "due_date": "2025-02-11",
+            "due_time": "12:00",
+            "weight": 15,
+            "difficulty": 6,
+            "course": "Course2"
+        },
+        {
+            "title": "Literature Review",
+            "due_date": "2025-03-03",
+            "due_time": "N/A",
+            "weight": 20,
+            "difficulty": 6,
+            "course": "Course2"
+        },
+        {
+            "title": "Infographic Presentation",
+            "due_date": "2025-03-31",
+            "due_time": "N/A",
+            "weight": 15,
+            "difficulty": 6,
+            "course": "Course2"
+        },
+        {
+            "title": "Reflection 1: Aging Brain",
+            "due_date": "2025-01-24",
+            "due_time": "N/A",
+            "weight": 10,
+            "difficulty": 6,
+            "course": "Course2"
+        },
+        {
+            "title": "Reflection 2: Science Literature",
+            "due_date": "2025-02-07",
+            "due_time": "N/A",
+            "weight": 10,
+            "difficulty": 6,
+            "course": "Course2"
+        },
+        {
+            "title": "Reflection 3: EDI",
+            "due_date": "2025-02-28",
+            "due_time": "N/A",
+            "weight": 10,
+            "difficulty": 6,
+            "course": "Course2"
+        },
+        {
+            "title": "Reflection 4: Evolving Perspective",
+            "due_date": "2025-03-21",
+            "due_time": "N/A",
+            "weight": 10,
+            "difficulty": 6,
+            "course": "Course2"
+        },
+        {
+            "title": "Reflection 5: Course Reflection",
+            "due_date": "2025-03-28",
+            "due_time": "N/A",
+            "weight": 10,
+            "difficulty": 6,
+            "course": "Course2"
+        },
+        {
+            "title": "In class quiz 1 covering lectures 1-3",
+            "due_date": "2025-01-30",
+            "due_time": "N/A",
+            "weight": 8,
+            "difficulty": 6,
+            "course": "Course1"
+        },
+        {
+            "title": "In class quiz 2 covering lectures 4-9",
+            "due_date": "2025-03-13",
+            "due_time": "N/A",
+            "weight": 8,
+            "difficulty": 6,
+            "course": "Course1"
+        },
+        {
+            "title": "In class quiz 3 covering lectures 10-12",
+            "due_date": "2025-04-03",
+            "due_time": "N/A",
+            "weight": 8,
+            "difficulty": 6,
+            "course": "Course1"
+        },
+        {
+            "title": "Midterm examination covering lectures 1-6",
+            "due_date": "2025-03-01",
+            "due_time": "N/A",
+            "weight": 26,
+            "difficulty": 6,
+            "course": "Course1"
+        },
+        {
+            "title": "Five-minute policy elevator pitch audiovisual presentation",
+            "due_date": "2025-03-31",
+            "due_time": "08:00",
+            "weight": 15,
+            "difficulty": 6,
+            "course": "Course1"
+        },
+        {
+            "title": "Final Examination covering all lectures",
+            "due_date": "2025-04-30",
+            "due_time": "N/A",
+            "weight": 35,
+            "difficulty": 6,
+            "course": "Course1"
+        }
+    ]
+}

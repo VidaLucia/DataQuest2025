@@ -4,12 +4,12 @@ import pytz
 import uuid
 import json
 
-def export_json_to_ics(data, output_path, timezone='America/Toronto'):
+def export_json_to_ics(data, output_path):
     cal = Calendar()
     cal.add('prodid', '-//Course Calendar Export//example.com//')
     cal.add('version', '2.0')
 
-    tz = pytz.timezone(timezone)
+    tz = pytz.timezone("America/Toronto")
 
     # === Assignments as Events ===
     for assignment in data.get("assignments", []):
@@ -31,6 +31,7 @@ def export_json_to_ics(data, output_path, timezone='America/Toronto'):
                 event.add("dtstart", dt_start)
                 event.add("dtend", dt_end)
                 event.add("description", f"Assignment due: {title}")
+                event.add("dtstamp", datetime.now(tz))
                 cal.add_component(event)
             except Exception as e:
                 print(f"Error processing assignment '{title}':", e)
@@ -55,11 +56,12 @@ def export_json_to_ics(data, output_path, timezone='America/Toronto'):
                 event.add("dtstart", dt_start)
                 event.add("dtend", dt_end)
                 event.add("description", f"Test: {title}")
+                event.add("dtstamp", datetime.now(tz))
                 cal.add_component(event)
             except Exception as e:
                 print(f"Error processing test '{title}':", e)
 
-    # === Schedule as Recurring Events ===
+    # === Recurring Class Schedule as Events ===
     day_map = {
         "Monday": "MO", "Tuesday": "TU", "Wednesday": "WE",
         "Thursday": "TH", "Friday": "FR", "Saturday": "SA", "Sunday": "SU"
@@ -78,7 +80,7 @@ def export_json_to_ics(data, output_path, timezone='America/Toronto'):
         try:
             start_str, end_str = time_range.split("–")
             bydays = [day_map[day] for day in days if day in day_map]
-            term_start = datetime(2025, 1, 6)  # this can be changed
+            term_start = datetime(2025, 1, 6)
             start_day_idx = list(day_map.keys()).index(days[0])
             first_occurrence = term_start + timedelta(days=(start_day_idx - term_start.weekday()) % 7)
 
@@ -94,22 +96,49 @@ def export_json_to_ics(data, output_path, timezone='America/Toronto'):
             event.add("location", location)
             event.add("dtstart", dt_start)
             event.add("dtend", dt_end)
+            event.add("dtstamp", datetime.now(tz))
             event.add("rrule", {
                 "FREQ": "WEEKLY",
                 "BYDAY": bydays,
-                "UNTIL": tz.localize(datetime(2025, 4, 9))  # End of term TEMPORARY
+                "UNTIL": tz.localize(datetime(2025, 4, 9))
             })
             cal.add_component(event)
         except Exception as e:
             print("Error processing schedule:", e)
 
-    # === Save the .ics file ===
+    # === Study Blocks as Events ===
+    for block in data.get("study_blocks", []):
+        title = block.get("title", "Study Block")
+        date = block.get("date")
+        time = block.get("time")
+
+        if not date or not time:
+            continue
+
+        try:
+            dt_start = datetime.strptime(f"{date} {time}", "%Y-%m-%d %H:%M")
+            dt_start = tz.localize(dt_start)
+            dt_end = dt_start + timedelta(hours=1)
+
+            event = Event()
+            event.add("uid", str(uuid.uuid4()))
+            event.add("summary", title)
+            event.add("dtstart", dt_start)
+            event.add("dtend", dt_end)
+            event.add("description", f"Scheduled study session for: {title}")
+            event.add("dtstamp", datetime.now(tz))
+            cal.add_component(event)
+        except Exception as e:
+            print(f"Error processing study block '{title}':", e)
+
+    # === Save to .ics ===
     with open(output_path, 'wb') as f:
         f.write(cal.to_ical())
         print(f"Exported Google Calendar compatible .ics to: {output_path}")
 
+
 # === Example usage ===
 if __name__ == "__main__":
-    with open("data/user_pdfs/syllabus_matched.json", "r") as f:  # Replace with your actual file
+    with open("data/user_pdfs/syllabus_matched.json", "r") as f:
         data = json.load(f)
     export_json_to_ics(data, "course_calendar.ics")

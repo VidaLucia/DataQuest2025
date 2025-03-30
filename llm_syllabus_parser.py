@@ -18,7 +18,7 @@ def extract_schedule_info(text):
         - due_date (YYYY-MM-DD)
         - due_time (HH:MM or "N/A" if not clearly specified)
         - weight (percentage of final grade, e.g. 20)
-        - difficulty (have this set to a default of 0) 
+        - difficulty (have this set to a default of 6) 
 
     2. A list of tests:
         - title
@@ -33,6 +33,7 @@ def extract_schedule_info(text):
         - location (if mentioned)
 
     Guidelines:
+    - If you are unable to determine weight use the placeholder value of 6
     - Name of the course should be the course code followed by the course name if possible if there are multiple different course codes
     - The assignment titles should be as descriptive as possible using words from the syllabus
     - If the time is vague or not given, return "N/A"
@@ -40,6 +41,7 @@ def extract_schedule_info(text):
     - The total weight of everything should add up to 100 unless there are bonus marks mentioned
     - If schedule is not mentioned, return an empty list
     - If schedule has no date and location do not include it in the schedule section
+    - If a assessment doenst have a time but is on the same day as the lecture have the time be the same time as the lecture
 
     Format the output as JSON:
     {{

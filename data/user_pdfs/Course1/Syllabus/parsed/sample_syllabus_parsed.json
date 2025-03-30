@@ -1,49 +1,45 @@
 {
     "assignments": [
         {
-            "title": "In class quizzes (3), 1st quiz, lecture 1-3 inclusive",
-            "due_date": "2025-01-30",
-            "due_time": "N/A",
-            "weight": 8,
-            "difficulty": 0
-        },
-        {
-            "title": "In class quizzes (3), 2nd quiz, lecture 4-9 inclusive",
-            "due_date": "2025-03-13",
-            "due_time": "N/A",
-            "weight": 8,
-            "difficulty": 0
-        },
-        {
-            "title": "In class quizzes (3), 3rd quiz, lectures 10-12 inclusive",
-            "due_date": "2025-04-03",
-            "due_time": "N/A",
-            "weight": 8,
-            "difficulty": 0
-        },
-        {
-            "title": "Midterm examination – covers lectures 1-6 inclusive",
-            "due_date": "2025-03-01",
-            "due_time": "N/A",
-            "weight": 26,
-            "difficulty": 0
-        },
-        {
             "title": "Five-minute, policy elevator pitch audiovisual presentation",
             "due_date": "2025-03-31",
             "due_time": "08:00",
             "weight": 15,
-            "difficulty": 0
-        },
-        {
-            "title": "Final Exam - covers all lectures",
-            "due_date": "2025-04-30",
-            "due_time": "N/A",
-            "weight": 35,
-            "difficulty": 0
+            "difficulty": 6
         }
     ],
-    "tests": [],
+    "tests": [
+        {
+            "title": "Midterm examination",
+            "date": "2025-03-01",
+            "time": "N/A",
+            "weight": 26
+        },
+        {
+            "title": "In class quiz 1",
+            "date": "2025-01-30",
+            "time": "N/A",
+            "weight": 8
+        },
+        {
+            "title": "In class quiz 2",
+            "date": "2025-03-13",
+            "time": "N/A",
+            "weight": 8
+        },
+        {
+            "title": "In class quiz 3",
+            "date": "2025-04-03",
+            "time": "N/A",
+            "weight": 8
+        },
+        {
+            "title": "Final Exam",
+            "date": "2025-04-07",
+            "time": "N/A",
+            "weight": 35
+        }
+    ],
     "schedule": [
         {
             "name": "Physiology 4700B: Fetal Physiology",

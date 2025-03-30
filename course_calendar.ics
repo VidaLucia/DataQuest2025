@@ -2,104 +2,1298 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//Course Calendar Export//example.com//
 BEGIN:VEVENT
-SUMMARY:Assignment: MEDSCIEN 4931G Case Study: Interdisciplinarity and Div
- ersity in Research
-DTSTART;TZID=America/Toronto:20250320T103000
-DTEND;TZID=America/Toronto:20250320T113000
-UID:0d333b13-9350-480f-9bd8-2df68995468f
-DESCRIPTION:Assignment due: MEDSCIEN 4931G Case Study: Interdisciplinarity
-  and Diversity in Research
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Assignment: Critical Appraisal 2 (Individual)
-DTSTART;TZID=America/Toronto:20250203T235900
-DTEND;TZID=America/Toronto:20250204T005900
-UID:86efde11-4204-4227-b747-ab95bd7e9887
-DESCRIPTION:Assignment due: Critical Appraisal 2 (Individual)
+SUMMARY:Assignment: Critical Appraisal 1 (group or individual)
+DTSTART;TZID=America/Toronto:20250120T235900
+DTEND;TZID=America/Toronto:20250121T005900
+DTSTAMP:20250330T065055Z
+UID:b9536c3d-138c-43cf-8f98-7d66acdb82a9
+DESCRIPTION:Assignment due: Critical Appraisal 1 (group or individual)
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Assignment: Case Study 1: Interdisciplinarity
 DTSTART;TZID=America/Toronto:20250114T120000
 DTEND;TZID=America/Toronto:20250114T130000
-UID:8addd324-3710-4d93-a285-4b27ad8a8002
+DTSTAMP:20250330T065055Z
+UID:2978ce8c-3096-48ad-9291-002cf2d90afc
 DESCRIPTION:Assignment due: Case Study 1: Interdisciplinarity
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Assignment: Reflection 1: Aging Brain
+DTSTART;TZID=America/Toronto:20250124T235900
+DTEND;TZID=America/Toronto:20250125T005900
+DTSTAMP:20250330T065055Z
+UID:dbb41f7e-29d0-4f63-8bfd-4e5a06b4c8c9
+DESCRIPTION:Assignment due: Reflection 1: Aging Brain
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Assignment: Critical Appraisal 2
+DTSTART;TZID=America/Toronto:20250203T235900
+DTEND;TZID=America/Toronto:20250204T005900
+DTSTAMP:20250330T065055Z
+UID:59c85d2f-be43-4952-b8ad-9e0db1af6535
+DESCRIPTION:Assignment due: Critical Appraisal 2
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Assignment: Case Study 2: Academic Integrity
 DTSTART;TZID=America/Toronto:20250128T120000
 DTEND;TZID=America/Toronto:20250128T130000
-UID:df93a40f-ef8c-4e93-b5e8-192672cdd1f6
+DTSTAMP:20250330T065055Z
+UID:cd73600f-c861-4399-8100-a64f5eaade2c
 DESCRIPTION:Assignment due: Case Study 2: Academic Integrity
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Assignment: Case Study 3: Science Communication
 DTSTART;TZID=America/Toronto:20250211T120000
 DTEND;TZID=America/Toronto:20250211T130000
-UID:679902c3-c85c-4d2d-87cf-a55411cc48e8
+DTSTAMP:20250330T065055Z
+UID:4779643e-5629-4263-a07c-7a0bd4406c76
 DESCRIPTION:Assignment due: Case Study 3: Science Communication
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Assignment: Literature Review
 DTSTART;TZID=America/Toronto:20250303T235900
 DTEND;TZID=America/Toronto:20250304T005900
-UID:6d2fc272-e3ea-4b0e-9582-2ce70fd15c29
+DTSTAMP:20250330T065055Z
+UID:a996abb6-ff58-409e-96a9-f72506762e94
 DESCRIPTION:Assignment due: Literature Review
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Assignment: Infographic Presentation
 DTSTART;TZID=America/Toronto:20250331T235900
 DTEND;TZID=America/Toronto:20250401T005900
-UID:dd3bc313-c9a9-40e3-b3ab-41cffedec937
+DTSTAMP:20250330T065055Z
+UID:07e17444-8835-47a2-a93c-179e7850da50
 DESCRIPTION:Assignment due: Infographic Presentation
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Assignment: Reflection 1: Aging Brain
-DTSTART;TZID=America/Toronto:20250124T235900
-DTEND;TZID=America/Toronto:20250125T005900
-UID:5b34dbd8-c587-4178-aff1-8bd9c7a16936
-DESCRIPTION:Assignment due: Reflection 1: Aging Brain
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Assignment: Reflection 2: Science Literature
 DTSTART;TZID=America/Toronto:20250207T235900
 DTEND;TZID=America/Toronto:20250208T005900
-UID:1cf749ab-1ddd-4685-b2dc-fd05d024aee6
+DTSTAMP:20250330T065055Z
+UID:0c929a5c-2f57-4f79-95a3-d863efbdad74
 DESCRIPTION:Assignment due: Reflection 2: Science Literature
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Assignment: Reflection 3: EDI
 DTSTART;TZID=America/Toronto:20250228T235900
 DTEND;TZID=America/Toronto:20250301T005900
-UID:fa30e851-9b62-47a3-8292-b5dfb5bd0c94
+DTSTAMP:20250330T065055Z
+UID:2febf5e6-fdde-46c3-a36d-8b18836744fe
 DESCRIPTION:Assignment due: Reflection 3: EDI
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Assignment: Reflection 4: Evolving Perspective
 DTSTART;TZID=America/Toronto:20250321T235900
 DTEND;TZID=America/Toronto:20250322T005900
-UID:c06ec158-7103-4db7-95e7-bdbde71e501c
+DTSTAMP:20250330T065055Z
+UID:a2db21e6-ab4b-4d66-8a9b-4e17ff551c83
 DESCRIPTION:Assignment due: Reflection 4: Evolving Perspective
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Assignment: Reflection 5: Course Reflection
 DTSTART;TZID=America/Toronto:20250328T235900
 DTEND;TZID=America/Toronto:20250329T005900
-UID:bba1eba2-168f-4ee4-83bd-40ad9f81d4ff
+DTSTAMP:20250330T065055Z
+UID:8272fff7-3ca5-464c-9c08-6c14d10300a9
 DESCRIPTION:Assignment due: Reflection 5: Course Reflection
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Assignment: Five-minute\, policy elevator pitch audiovisual presen
+ tation
+DTSTART;TZID=America/Toronto:20250331T080000
+DTEND;TZID=America/Toronto:20250331T090000
+DTSTAMP:20250330T065055Z
+UID:5d539a59-3ccf-4a42-bd43-de70d2782717
+DESCRIPTION:Assignment due: Five-minute\, policy elevator pitch audiovisua
+ l presentation
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Test: Final Exam (take home)
 DTSTART;TZID=America/Toronto:20250407T090000
 DTEND;TZID=America/Toronto:20250407T110000
-UID:a72cc531-954b-443d-856c-3277a665024b
+DTSTAMP:20250330T065055Z
+UID:083e716a-cb85-42f5-bb85-9afb40049652
 DESCRIPTION:Test: Final Exam (take home)
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Class Session
+SUMMARY:Test: Midterm examination
+DTSTART;TZID=America/Toronto:20250301T090000
+DTEND;TZID=America/Toronto:20250301T110000
+DTSTAMP:20250330T065055Z
+UID:492cf73c-3ec5-41eb-b716-eac9a6a20bfe
+DESCRIPTION:Test: Midterm examination
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Test: In class quiz 1
+DTSTART;TZID=America/Toronto:20250130T090000
+DTEND;TZID=America/Toronto:20250130T110000
+DTSTAMP:20250330T065055Z
+UID:26694bdc-a106-4cca-b628-6fe41ca2d95c
+DESCRIPTION:Test: In class quiz 1
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Test: In class quiz 2
+DTSTART;TZID=America/Toronto:20250313T090000
+DTEND;TZID=America/Toronto:20250313T110000
+DTSTAMP:20250330T065055Z
+UID:6eb4be11-541b-47d3-8224-4ac0c529e7c7
+DESCRIPTION:Test: In class quiz 2
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Test: In class quiz 3
+DTSTART;TZID=America/Toronto:20250403T090000
+DTEND;TZID=America/Toronto:20250403T110000
+DTSTAMP:20250330T065055Z
+UID:d2cf76ba-bd1d-4538-a0c2-cb80518f5c88
+DESCRIPTION:Test: In class quiz 3
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Test: Final Exam
+DTSTART;TZID=America/Toronto:20250407T090000
+DTEND;TZID=America/Toronto:20250407T110000
+DTSTAMP:20250330T065055Z
+UID:3b728c64-5d18-465a-8c1b-46fb7b749f0c
+DESCRIPTION:Test: Final Exam
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:MEDSCIEN 4931G: Special Topics in Medical Sciences
 DTSTART;TZID=America/Toronto:20250107T133000
 DTEND;TZID=America/Toronto:20250107T153000
-UID:479bccd5-9cd3-4eba-b6a9-d84ad98b1f2a
-RRULE:FREQ=WEEKLY;UNTIL=20250430T000000;BYDAY=TU
+DTSTAMP:20250330T065055Z
+UID:84b210f7-0b63-4314-9f33-f1faf9e2b835
+RRULE:FREQ=WEEKLY;UNTIL=20250409T000000;BYDAY=TU
 LOCATION:N/A
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Physiology 4700B: Fetal Physiology
+DTSTART;TZID=America/Toronto:20250109T143000
+DTEND;TZID=America/Toronto:20250109T163000
+DTSTAMP:20250330T065055Z
+UID:2f3a6907-4870-4845-82b6-09307b6cb246
+RRULE:FREQ=WEEKLY;UNTIL=20250409T000000;BYDAY=TH
+LOCATION:N/A
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Case Study 1: Interdisciplinarity
+DTSTART;TZID=America/Toronto:20241231T090000
+DTEND;TZID=America/Toronto:20241231T100000
+DTSTAMP:20250330T065055Z
+UID:9c9f3f0d-d93f-45ae-9e3b-8d0b8a7bdd71
+DESCRIPTION:Scheduled study session for: Work on Case Study 1: Interdiscip
+ linarity
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Case Study 1: Interdisciplinarity
+DTSTART;TZID=America/Toronto:20241231T100000
+DTEND;TZID=America/Toronto:20241231T110000
+DTSTAMP:20250330T065055Z
+UID:eafe2a50-b498-4af9-a63a-4930eda9bf8a
+DESCRIPTION:Scheduled study session for: Work on Case Study 1: Interdiscip
+ linarity
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Case Study 1: Interdisciplinarity
+DTSTART;TZID=America/Toronto:20241231T110000
+DTEND;TZID=America/Toronto:20241231T120000
+DTSTAMP:20250330T065055Z
+UID:64008cb4-8c47-4529-87b0-7988a085f810
+DESCRIPTION:Scheduled study session for: Work on Case Study 1: Interdiscip
+ linarity
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Case Study 1: Interdisciplinarity
+DTSTART;TZID=America/Toronto:20250101T000000
+DTEND;TZID=America/Toronto:20250101T010000
+DTSTAMP:20250330T065055Z
+UID:82f20e12-8f77-4e15-a4e9-b540f0110322
+DESCRIPTION:Scheduled study session for: Work on Case Study 1: Interdiscip
+ linarity
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Case Study 1: Interdisciplinarity
+DTSTART;TZID=America/Toronto:20250101T010000
+DTEND;TZID=America/Toronto:20250101T020000
+DTSTAMP:20250330T065055Z
+UID:8a83a874-02c5-4992-a98c-3c6eb28f555f
+DESCRIPTION:Scheduled study session for: Work on Case Study 1: Interdiscip
+ linarity
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Case Study 1: Interdisciplinarity
+DTSTART;TZID=America/Toronto:20250101T090000
+DTEND;TZID=America/Toronto:20250101T100000
+DTSTAMP:20250330T065055Z
+UID:24b374f3-ebaf-4bae-8746-317c537423c1
+DESCRIPTION:Scheduled study session for: Work on Case Study 1: Interdiscip
+ linarity
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Case Study 1: Interdisciplinarity
+DTSTART;TZID=America/Toronto:20250102T000000
+DTEND;TZID=America/Toronto:20250102T010000
+DTSTAMP:20250330T065055Z
+UID:cdc65ebd-2689-4a49-90be-faa677ffd989
+DESCRIPTION:Scheduled study session for: Work on Case Study 1: Interdiscip
+ linarity
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Case Study 1: Interdisciplinarity
+DTSTART;TZID=America/Toronto:20250102T010000
+DTEND;TZID=America/Toronto:20250102T020000
+DTSTAMP:20250330T065055Z
+UID:5461a564-307c-4c82-97a8-836a7b146ebb
+DESCRIPTION:Scheduled study session for: Work on Case Study 1: Interdiscip
+ linarity
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Case Study 1: Interdisciplinarity
+DTSTART;TZID=America/Toronto:20250102T090000
+DTEND;TZID=America/Toronto:20250102T100000
+DTSTAMP:20250330T065055Z
+UID:db293a6c-0586-4beb-a6ec-82abae83e446
+DESCRIPTION:Scheduled study session for: Work on Case Study 1: Interdiscip
+ linarity
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Case Study 1: Interdisciplinarity
+DTSTART;TZID=America/Toronto:20250103T000000
+DTEND;TZID=America/Toronto:20250103T010000
+DTSTAMP:20250330T065055Z
+UID:7bdc277d-d41e-4ae0-a2cb-28b2d8d0e7ff
+DESCRIPTION:Scheduled study session for: Work on Case Study 1: Interdiscip
+ linarity
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Case Study 1: Interdisciplinarity
+DTSTART;TZID=America/Toronto:20250103T010000
+DTEND;TZID=America/Toronto:20250103T020000
+DTSTAMP:20250330T065055Z
+UID:527a3dee-ff04-43f1-8162-263f298a865a
+DESCRIPTION:Scheduled study session for: Work on Case Study 1: Interdiscip
+ linarity
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Critical Appraisal 1 (group or individual)
+DTSTART;TZID=America/Toronto:20250106T090000
+DTEND;TZID=America/Toronto:20250106T100000
+DTSTAMP:20250330T065055Z
+UID:854bbab1-7a34-4c5c-a1ec-63619891fc14
+DESCRIPTION:Scheduled study session for: Work on Critical Appraisal 1 (gro
+ up or individual)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Critical Appraisal 1 (group or individual)
+DTSTART;TZID=America/Toronto:20250106T100000
+DTEND;TZID=America/Toronto:20250106T110000
+DTSTAMP:20250330T065055Z
+UID:22529261-dba6-4847-84d6-5d3c041f3f5a
+DESCRIPTION:Scheduled study session for: Work on Critical Appraisal 1 (gro
+ up or individual)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Critical Appraisal 1 (group or individual)
+DTSTART;TZID=America/Toronto:20250106T110000
+DTEND;TZID=America/Toronto:20250106T120000
+DTSTAMP:20250330T065055Z
+UID:67436cd3-54ce-4b5f-bc90-dce7e211dba1
+DESCRIPTION:Scheduled study session for: Work on Critical Appraisal 1 (gro
+ up or individual)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Reflection 1: Aging Brain
+DTSTART;TZID=America/Toronto:20250110T090000
+DTEND;TZID=America/Toronto:20250110T100000
+DTSTAMP:20250330T065055Z
+UID:40aadb9f-10ea-447a-815e-50eb164cca7e
+DESCRIPTION:Scheduled study session for: Work on Reflection 1: Aging Brain
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Reflection 1: Aging Brain
+DTSTART;TZID=America/Toronto:20250110T100000
+DTEND;TZID=America/Toronto:20250110T110000
+DTSTAMP:20250330T065055Z
+UID:954d2c70-a6e1-47f0-bd43-8cb6a69c0087
+DESCRIPTION:Scheduled study session for: Work on Reflection 1: Aging Brain
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Reflection 1: Aging Brain
+DTSTART;TZID=America/Toronto:20250110T110000
+DTEND;TZID=America/Toronto:20250110T120000
+DTSTAMP:20250330T065055Z
+UID:53f6c3e3-2e9d-441e-b9cb-eb82c6df5595
+DESCRIPTION:Scheduled study session for: Work on Reflection 1: Aging Brain
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Case Study 2: Academic Integrity
+DTSTART;TZID=America/Toronto:20250114T090000
+DTEND;TZID=America/Toronto:20250114T100000
+DTSTAMP:20250330T065055Z
+UID:fb1f311d-4d35-461c-8a45-36592de22f7b
+DESCRIPTION:Scheduled study session for: Work on Case Study 2: Academic In
+ tegrity
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Case Study 2: Academic Integrity
+DTSTART;TZID=America/Toronto:20250114T100000
+DTEND;TZID=America/Toronto:20250114T110000
+DTSTAMP:20250330T065055Z
+UID:9508a629-7405-4a79-9b75-7cb72609e46e
+DESCRIPTION:Scheduled study session for: Work on Case Study 2: Academic In
+ tegrity
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Case Study 2: Academic Integrity
+DTSTART;TZID=America/Toronto:20250114T110000
+DTEND;TZID=America/Toronto:20250114T120000
+DTSTAMP:20250330T065055Z
+UID:e724713b-a9c4-42d9-8f7f-0b715f21515e
+DESCRIPTION:Scheduled study session for: Work on Case Study 2: Academic In
+ tegrity
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for In class quiz 1
+DTSTART;TZID=America/Toronto:20250116T090000
+DTEND;TZID=America/Toronto:20250116T100000
+DTSTAMP:20250330T065055Z
+UID:d8852796-8e96-4e08-8217-d8b9f7c627fb
+DESCRIPTION:Scheduled study session for: Study for In class quiz 1
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for In class quiz 1
+DTSTART;TZID=America/Toronto:20250116T100000
+DTEND;TZID=America/Toronto:20250116T110000
+DTSTAMP:20250330T065055Z
+UID:658af152-fdbd-4ca7-82ab-3e2bf9177e8b
+DESCRIPTION:Scheduled study session for: Study for In class quiz 1
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for In class quiz 1
+DTSTART;TZID=America/Toronto:20250116T110000
+DTEND;TZID=America/Toronto:20250116T120000
+DTSTAMP:20250330T065055Z
+UID:d97815f6-488a-486f-bf57-618b65fa8779
+DESCRIPTION:Scheduled study session for: Study for In class quiz 1
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for In class quiz 1
+DTSTART;TZID=America/Toronto:20250117T000000
+DTEND;TZID=America/Toronto:20250117T010000
+DTSTAMP:20250330T065055Z
+UID:4a2228d1-e0f6-473e-a8ee-13ef1b545d74
+DESCRIPTION:Scheduled study session for: Study for In class quiz 1
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for In class quiz 1
+DTSTART;TZID=America/Toronto:20250117T010000
+DTEND;TZID=America/Toronto:20250117T020000
+DTSTAMP:20250330T065055Z
+UID:4e577cab-4057-471e-84ff-6e2a402ba7bc
+DESCRIPTION:Scheduled study session for: Study for In class quiz 1
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for In class quiz 1
+DTSTART;TZID=America/Toronto:20250117T090000
+DTEND;TZID=America/Toronto:20250117T100000
+DTSTAMP:20250330T065055Z
+UID:743633e0-ac72-4a2c-a15c-f7e572d6c870
+DESCRIPTION:Scheduled study session for: Study for In class quiz 1
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Critical Appraisal 2
+DTSTART;TZID=America/Toronto:20250120T090000
+DTEND;TZID=America/Toronto:20250120T100000
+DTSTAMP:20250330T065055Z
+UID:f768c1c6-1acf-41c5-8409-746e33e79598
+DESCRIPTION:Scheduled study session for: Work on Critical Appraisal 2
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Critical Appraisal 2
+DTSTART;TZID=America/Toronto:20250120T100000
+DTEND;TZID=America/Toronto:20250120T110000
+DTSTAMP:20250330T065055Z
+UID:97ca54ec-e3cd-45e7-8850-5161697ca4b9
+DESCRIPTION:Scheduled study session for: Work on Critical Appraisal 2
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Critical Appraisal 2
+DTSTART;TZID=America/Toronto:20250120T110000
+DTEND;TZID=America/Toronto:20250120T120000
+DTSTAMP:20250330T065055Z
+UID:9bd76d90-dd15-46ef-87e0-85e6a4907c3f
+DESCRIPTION:Scheduled study session for: Work on Critical Appraisal 2
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Reflection 2: Science Literature
+DTSTART;TZID=America/Toronto:20250124T090000
+DTEND;TZID=America/Toronto:20250124T100000
+DTSTAMP:20250330T065055Z
+UID:916342eb-def0-43bc-8513-849220323854
+DESCRIPTION:Scheduled study session for: Work on Reflection 2: Science Lit
+ erature
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Reflection 2: Science Literature
+DTSTART;TZID=America/Toronto:20250124T100000
+DTEND;TZID=America/Toronto:20250124T110000
+DTSTAMP:20250330T065055Z
+UID:b91694fe-7bdb-4e45-9981-114503fca509
+DESCRIPTION:Scheduled study session for: Work on Reflection 2: Science Lit
+ erature
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Reflection 2: Science Literature
+DTSTART;TZID=America/Toronto:20250124T110000
+DTEND;TZID=America/Toronto:20250124T120000
+DTSTAMP:20250330T065055Z
+UID:8f80d5c4-6199-4570-a9a8-2fa299cfd219
+DESCRIPTION:Scheduled study session for: Work on Reflection 2: Science Lit
+ erature
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Case Study 3: Science Communication
+DTSTART;TZID=America/Toronto:20250128T090000
+DTEND;TZID=America/Toronto:20250128T100000
+DTSTAMP:20250330T065055Z
+UID:d9cc428b-620f-43c3-a341-2a6d528d85ca
+DESCRIPTION:Scheduled study session for: Work on Case Study 3: Science Com
+ munication
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Case Study 3: Science Communication
+DTSTART;TZID=America/Toronto:20250128T100000
+DTEND;TZID=America/Toronto:20250128T110000
+DTSTAMP:20250330T065055Z
+UID:536e91a7-5c04-4882-8e30-48470ecf3d13
+DESCRIPTION:Scheduled study session for: Work on Case Study 3: Science Com
+ munication
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Case Study 3: Science Communication
+DTSTART;TZID=America/Toronto:20250128T110000
+DTEND;TZID=America/Toronto:20250128T120000
+DTSTAMP:20250330T065055Z
+UID:0a5abdbb-a4e6-459c-a723-ceabbd2fd135
+DESCRIPTION:Scheduled study session for: Work on Case Study 3: Science Com
+ munication
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Reflection 3: EDI
+DTSTART;TZID=America/Toronto:20250214T090000
+DTEND;TZID=America/Toronto:20250214T100000
+DTSTAMP:20250330T065055Z
+UID:376ebf3d-fb92-43fa-88e0-135e1d7c8d92
+DESCRIPTION:Scheduled study session for: Work on Reflection 3: EDI
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Reflection 3: EDI
+DTSTART;TZID=America/Toronto:20250214T100000
+DTEND;TZID=America/Toronto:20250214T110000
+DTSTAMP:20250330T065055Z
+UID:febf5ed2-d594-402d-b7f0-d77d5f282e88
+DESCRIPTION:Scheduled study session for: Work on Reflection 3: EDI
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Reflection 3: EDI
+DTSTART;TZID=America/Toronto:20250214T110000
+DTEND;TZID=America/Toronto:20250214T120000
+DTSTAMP:20250330T065055Z
+UID:e9d9ffa2-8cd2-4f78-8cbc-9c5efe6d6dd5
+DESCRIPTION:Scheduled study session for: Work on Reflection 3: EDI
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for Midterm examination
+DTSTART;TZID=America/Toronto:20250215T090000
+DTEND;TZID=America/Toronto:20250215T100000
+DTSTAMP:20250330T065055Z
+UID:6f76fcf5-ad60-4bfa-aff9-15853788a89a
+DESCRIPTION:Scheduled study session for: Study for Midterm examination
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for Midterm examination
+DTSTART;TZID=America/Toronto:20250215T100000
+DTEND;TZID=America/Toronto:20250215T110000
+DTSTAMP:20250330T065055Z
+UID:4b756d87-83db-48d7-88ef-ef51aaec742b
+DESCRIPTION:Scheduled study session for: Study for Midterm examination
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for Midterm examination
+DTSTART;TZID=America/Toronto:20250215T110000
+DTEND;TZID=America/Toronto:20250215T120000
+DTSTAMP:20250330T065055Z
+UID:c759b28d-707b-4884-a0e2-f023167c6dd3
+DESCRIPTION:Scheduled study session for: Study for Midterm examination
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for Midterm examination
+DTSTART;TZID=America/Toronto:20250216T000000
+DTEND;TZID=America/Toronto:20250216T010000
+DTSTAMP:20250330T065055Z
+UID:e0fc44bd-1150-4841-b92e-b781d4546006
+DESCRIPTION:Scheduled study session for: Study for Midterm examination
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for Midterm examination
+DTSTART;TZID=America/Toronto:20250216T010000
+DTEND;TZID=America/Toronto:20250216T020000
+DTSTAMP:20250330T065055Z
+UID:db57dbdc-33f0-497f-9d6a-d46205e124f3
+DESCRIPTION:Scheduled study session for: Study for Midterm examination
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for Midterm examination
+DTSTART;TZID=America/Toronto:20250216T090000
+DTEND;TZID=America/Toronto:20250216T100000
+DTSTAMP:20250330T065055Z
+UID:291ff580-dc97-43e4-ada8-1bf9d0aec791
+DESCRIPTION:Scheduled study session for: Study for Midterm examination
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for Midterm examination
+DTSTART;TZID=America/Toronto:20250217T000000
+DTEND;TZID=America/Toronto:20250217T010000
+DTSTAMP:20250330T065055Z
+UID:5b28cab9-7d1c-4a8b-b4f3-9bbcadea6ead
+DESCRIPTION:Scheduled study session for: Study for Midterm examination
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for Midterm examination
+DTSTART;TZID=America/Toronto:20250217T010000
+DTEND;TZID=America/Toronto:20250217T020000
+DTSTAMP:20250330T065055Z
+UID:02950a6c-a75f-4e30-b4ff-9470fdd4135e
+DESCRIPTION:Scheduled study session for: Study for Midterm examination
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for Midterm examination
+DTSTART;TZID=America/Toronto:20250217T090000
+DTEND;TZID=America/Toronto:20250217T100000
+DTSTAMP:20250330T065055Z
+UID:514f6f50-1668-435a-aa78-2c277cf9682b
+DESCRIPTION:Scheduled study session for: Study for Midterm examination
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for Midterm examination
+DTSTART;TZID=America/Toronto:20250218T000000
+DTEND;TZID=America/Toronto:20250218T010000
+DTSTAMP:20250330T065055Z
+UID:45c888eb-11c3-459a-8278-3c7711b941b3
+DESCRIPTION:Scheduled study session for: Study for Midterm examination
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for Midterm examination
+DTSTART;TZID=America/Toronto:20250218T010000
+DTEND;TZID=America/Toronto:20250218T020000
+DTSTAMP:20250330T065055Z
+UID:5051ca76-a553-4c6e-9c9f-f6617f147a60
+DESCRIPTION:Scheduled study session for: Study for Midterm examination
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for Midterm examination
+DTSTART;TZID=America/Toronto:20250218T090000
+DTEND;TZID=America/Toronto:20250218T100000
+DTSTAMP:20250330T065055Z
+UID:a2675411-6bb3-4000-b24c-df3feb8b43b7
+DESCRIPTION:Scheduled study session for: Study for Midterm examination
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for Midterm examination
+DTSTART;TZID=America/Toronto:20250219T000000
+DTEND;TZID=America/Toronto:20250219T010000
+DTSTAMP:20250330T065055Z
+UID:58b6337b-326b-4739-9d80-8e572d9a9f16
+DESCRIPTION:Scheduled study session for: Study for Midterm examination
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for Midterm examination
+DTSTART;TZID=America/Toronto:20250219T010000
+DTEND;TZID=America/Toronto:20250219T020000
+DTSTAMP:20250330T065055Z
+UID:c2460e76-bf3e-4e4d-b045-cd6690900927
+DESCRIPTION:Scheduled study session for: Study for Midterm examination
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for Midterm examination
+DTSTART;TZID=America/Toronto:20250219T090000
+DTEND;TZID=America/Toronto:20250219T100000
+DTSTAMP:20250330T065055Z
+UID:f76a9ea6-eb64-48cc-a0be-6f7c423ca374
+DESCRIPTION:Scheduled study session for: Study for Midterm examination
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Literature Review
+DTSTART;TZID=America/Toronto:20250217T090000
+DTEND;TZID=America/Toronto:20250217T100000
+DTSTAMP:20250330T065055Z
+UID:a4173928-7d96-4eee-aabb-c1832b6eb441
+DESCRIPTION:Scheduled study session for: Work on Literature Review
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Literature Review
+DTSTART;TZID=America/Toronto:20250217T100000
+DTEND;TZID=America/Toronto:20250217T110000
+DTSTAMP:20250330T065055Z
+UID:466f7730-b5de-4273-9abf-28524500f363
+DESCRIPTION:Scheduled study session for: Work on Literature Review
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Literature Review
+DTSTART;TZID=America/Toronto:20250217T110000
+DTEND;TZID=America/Toronto:20250217T120000
+DTSTAMP:20250330T065055Z
+UID:77c6f608-b95d-42b5-a44b-21103d4459c0
+DESCRIPTION:Scheduled study session for: Work on Literature Review
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Literature Review
+DTSTART;TZID=America/Toronto:20250218T000000
+DTEND;TZID=America/Toronto:20250218T010000
+DTSTAMP:20250330T065055Z
+UID:f70ac6a7-f265-4aa5-aeb7-7e313ffb003b
+DESCRIPTION:Scheduled study session for: Work on Literature Review
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Literature Review
+DTSTART;TZID=America/Toronto:20250218T010000
+DTEND;TZID=America/Toronto:20250218T020000
+DTSTAMP:20250330T065055Z
+UID:e9e1e5ff-4674-450c-9fe6-d782799c3a48
+DESCRIPTION:Scheduled study session for: Work on Literature Review
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Literature Review
+DTSTART;TZID=America/Toronto:20250218T090000
+DTEND;TZID=America/Toronto:20250218T100000
+DTSTAMP:20250330T065055Z
+UID:a476a835-f53d-419e-9ca4-32525a06a002
+DESCRIPTION:Scheduled study session for: Work on Literature Review
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Literature Review
+DTSTART;TZID=America/Toronto:20250219T000000
+DTEND;TZID=America/Toronto:20250219T010000
+DTSTAMP:20250330T065055Z
+UID:9e035626-ab7a-4bfc-b87a-4e7414893541
+DESCRIPTION:Scheduled study session for: Work on Literature Review
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Literature Review
+DTSTART;TZID=America/Toronto:20250219T010000
+DTEND;TZID=America/Toronto:20250219T020000
+DTSTAMP:20250330T065055Z
+UID:1d4740d3-5399-4abc-b894-4c6e99e98851
+DESCRIPTION:Scheduled study session for: Work on Literature Review
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Literature Review
+DTSTART;TZID=America/Toronto:20250219T090000
+DTEND;TZID=America/Toronto:20250219T100000
+DTSTAMP:20250330T065055Z
+UID:ff943100-a78d-4214-b1f8-cd3fda9de14b
+DESCRIPTION:Scheduled study session for: Work on Literature Review
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Literature Review
+DTSTART;TZID=America/Toronto:20250220T000000
+DTEND;TZID=America/Toronto:20250220T010000
+DTSTAMP:20250330T065055Z
+UID:2e7ca2e4-c308-4d12-972e-1b23224b606e
+DESCRIPTION:Scheduled study session for: Work on Literature Review
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Literature Review
+DTSTART;TZID=America/Toronto:20250220T010000
+DTEND;TZID=America/Toronto:20250220T020000
+DTSTAMP:20250330T065055Z
+UID:1bf6e880-f5a0-4902-a05e-39b527772e90
+DESCRIPTION:Scheduled study session for: Work on Literature Review
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for In class quiz 2
+DTSTART;TZID=America/Toronto:20250227T090000
+DTEND;TZID=America/Toronto:20250227T100000
+DTSTAMP:20250330T065055Z
+UID:602d0290-55cf-4d85-84c1-8aab1ceb0f60
+DESCRIPTION:Scheduled study session for: Study for In class quiz 2
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for In class quiz 2
+DTSTART;TZID=America/Toronto:20250227T100000
+DTEND;TZID=America/Toronto:20250227T110000
+DTSTAMP:20250330T065055Z
+UID:2c868be1-ba25-4601-8140-0fd965f5d260
+DESCRIPTION:Scheduled study session for: Study for In class quiz 2
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for In class quiz 2
+DTSTART;TZID=America/Toronto:20250227T110000
+DTEND;TZID=America/Toronto:20250227T120000
+DTSTAMP:20250330T065055Z
+UID:6566fd4c-33b8-4791-91fb-4eae9bb045ea
+DESCRIPTION:Scheduled study session for: Study for In class quiz 2
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for In class quiz 2
+DTSTART;TZID=America/Toronto:20250228T000000
+DTEND;TZID=America/Toronto:20250228T010000
+DTSTAMP:20250330T065055Z
+UID:ddb8bed8-7ac9-44f2-a467-601bbbabf58f
+DESCRIPTION:Scheduled study session for: Study for In class quiz 2
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for In class quiz 2
+DTSTART;TZID=America/Toronto:20250228T010000
+DTEND;TZID=America/Toronto:20250228T020000
+DTSTAMP:20250330T065055Z
+UID:12db8254-2c13-4fd6-9693-aa7cc3f2c65c
+DESCRIPTION:Scheduled study session for: Study for In class quiz 2
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for In class quiz 2
+DTSTART;TZID=America/Toronto:20250228T090000
+DTEND;TZID=America/Toronto:20250228T100000
+DTSTAMP:20250330T065055Z
+UID:ad1d893f-b792-4372-8ec2-6a7f32f5558d
+DESCRIPTION:Scheduled study session for: Study for In class quiz 2
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Reflection 4: Evolving Perspective
+DTSTART;TZID=America/Toronto:20250307T090000
+DTEND;TZID=America/Toronto:20250307T100000
+DTSTAMP:20250330T065055Z
+UID:0486259e-afb8-42ce-891c-1c8d76494a37
+DESCRIPTION:Scheduled study session for: Work on Reflection 4: Evolving Pe
+ rspective
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Reflection 4: Evolving Perspective
+DTSTART;TZID=America/Toronto:20250307T100000
+DTEND;TZID=America/Toronto:20250307T110000
+DTSTAMP:20250330T065055Z
+UID:0a0142f1-d987-4d5e-ba07-46a3a912063c
+DESCRIPTION:Scheduled study session for: Work on Reflection 4: Evolving Pe
+ rspective
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Reflection 4: Evolving Perspective
+DTSTART;TZID=America/Toronto:20250307T110000
+DTEND;TZID=America/Toronto:20250307T120000
+DTSTAMP:20250330T065055Z
+UID:e1188edf-d36f-41d6-ba46-fba04d605337
+DESCRIPTION:Scheduled study session for: Work on Reflection 4: Evolving Pe
+ rspective
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Reflection 5: Course Reflection
+DTSTART;TZID=America/Toronto:20250314T090000
+DTEND;TZID=America/Toronto:20250314T100000
+DTSTAMP:20250330T065055Z
+UID:61334282-47f6-46c6-961e-ae07a8e5042a
+DESCRIPTION:Scheduled study session for: Work on Reflection 5: Course Refl
+ ection
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Reflection 5: Course Reflection
+DTSTART;TZID=America/Toronto:20250314T100000
+DTEND;TZID=America/Toronto:20250314T110000
+DTSTAMP:20250330T065055Z
+UID:201963d5-84ad-49a7-807c-e3dd63cfb1de
+DESCRIPTION:Scheduled study session for: Work on Reflection 5: Course Refl
+ ection
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Reflection 5: Course Reflection
+DTSTART;TZID=America/Toronto:20250314T110000
+DTEND;TZID=America/Toronto:20250314T120000
+DTSTAMP:20250330T065055Z
+UID:2a641d88-caa9-4f2e-8085-9d03d7c95cb3
+DESCRIPTION:Scheduled study session for: Work on Reflection 5: Course Refl
+ ection
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Infographic Presentation
+DTSTART;TZID=America/Toronto:20250317T090000
+DTEND;TZID=America/Toronto:20250317T100000
+DTSTAMP:20250330T065055Z
+UID:745c5566-5d38-4fd6-918e-7283751c405a
+DESCRIPTION:Scheduled study session for: Work on Infographic Presentation
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Infographic Presentation
+DTSTART;TZID=America/Toronto:20250317T100000
+DTEND;TZID=America/Toronto:20250317T110000
+DTSTAMP:20250330T065055Z
+UID:c275b0ca-fcad-4074-b527-3dc8df62b742
+DESCRIPTION:Scheduled study session for: Work on Infographic Presentation
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Infographic Presentation
+DTSTART;TZID=America/Toronto:20250317T110000
+DTEND;TZID=America/Toronto:20250317T120000
+DTSTAMP:20250330T065055Z
+UID:c05eeeab-5889-4ee6-9476-e3ddb64f001f
+DESCRIPTION:Scheduled study session for: Work on Infographic Presentation
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Infographic Presentation
+DTSTART;TZID=America/Toronto:20250318T000000
+DTEND;TZID=America/Toronto:20250318T010000
+DTSTAMP:20250330T065055Z
+UID:2ab86a2c-677f-48c0-a265-6ebd39477ba6
+DESCRIPTION:Scheduled study session for: Work on Infographic Presentation
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Infographic Presentation
+DTSTART;TZID=America/Toronto:20250318T010000
+DTEND;TZID=America/Toronto:20250318T020000
+DTSTAMP:20250330T065055Z
+UID:fbd6f715-3e32-4f9c-9ae1-d3b4216f5a29
+DESCRIPTION:Scheduled study session for: Work on Infographic Presentation
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Infographic Presentation
+DTSTART;TZID=America/Toronto:20250318T090000
+DTEND;TZID=America/Toronto:20250318T100000
+DTSTAMP:20250330T065055Z
+UID:f4b52c1f-1f97-4082-a694-9f13e80e1246
+DESCRIPTION:Scheduled study session for: Work on Infographic Presentation
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Infographic Presentation
+DTSTART;TZID=America/Toronto:20250319T000000
+DTEND;TZID=America/Toronto:20250319T010000
+DTSTAMP:20250330T065055Z
+UID:9ba53c2c-acb2-4c88-b3e0-ad243978f29c
+DESCRIPTION:Scheduled study session for: Work on Infographic Presentation
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Infographic Presentation
+DTSTART;TZID=America/Toronto:20250319T010000
+DTEND;TZID=America/Toronto:20250319T020000
+DTSTAMP:20250330T065055Z
+UID:505b8d60-f187-412b-9cef-faeb6f5c5536
+DESCRIPTION:Scheduled study session for: Work on Infographic Presentation
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Infographic Presentation
+DTSTART;TZID=America/Toronto:20250319T090000
+DTEND;TZID=America/Toronto:20250319T100000
+DTSTAMP:20250330T065055Z
+UID:5199a6ac-db0d-4727-83c1-7227265ef660
+DESCRIPTION:Scheduled study session for: Work on Infographic Presentation
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Infographic Presentation
+DTSTART;TZID=America/Toronto:20250320T000000
+DTEND;TZID=America/Toronto:20250320T010000
+DTSTAMP:20250330T065055Z
+UID:3da450b8-9df3-441e-8076-3f102b648a81
+DESCRIPTION:Scheduled study session for: Work on Infographic Presentation
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Infographic Presentation
+DTSTART;TZID=America/Toronto:20250320T010000
+DTEND;TZID=America/Toronto:20250320T020000
+DTSTAMP:20250330T065055Z
+UID:1b370025-9018-46bb-a0c0-461b9adbb750
+DESCRIPTION:Scheduled study session for: Work on Infographic Presentation
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Five-minute\, policy elevator pitch audiovisual presentati
+ on
+DTSTART;TZID=America/Toronto:20250317T090000
+DTEND;TZID=America/Toronto:20250317T100000
+DTSTAMP:20250330T065055Z
+UID:d349017c-9699-4933-9a0d-1400e8a9a22c
+DESCRIPTION:Scheduled study session for: Work on Five-minute\, policy elev
+ ator pitch audiovisual presentation
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Five-minute\, policy elevator pitch audiovisual presentati
+ on
+DTSTART;TZID=America/Toronto:20250317T100000
+DTEND;TZID=America/Toronto:20250317T110000
+DTSTAMP:20250330T065055Z
+UID:856cfba6-2271-4a27-b54b-b630adaf76c0
+DESCRIPTION:Scheduled study session for: Work on Five-minute\, policy elev
+ ator pitch audiovisual presentation
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Five-minute\, policy elevator pitch audiovisual presentati
+ on
+DTSTART;TZID=America/Toronto:20250317T110000
+DTEND;TZID=America/Toronto:20250317T120000
+DTSTAMP:20250330T065055Z
+UID:78ea44de-d570-4738-9924-769a6dfc38d4
+DESCRIPTION:Scheduled study session for: Work on Five-minute\, policy elev
+ ator pitch audiovisual presentation
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Five-minute\, policy elevator pitch audiovisual presentati
+ on
+DTSTART;TZID=America/Toronto:20250318T000000
+DTEND;TZID=America/Toronto:20250318T010000
+DTSTAMP:20250330T065055Z
+UID:fc0dcd1f-890a-4fd7-8c04-7b4907ed40f9
+DESCRIPTION:Scheduled study session for: Work on Five-minute\, policy elev
+ ator pitch audiovisual presentation
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Five-minute\, policy elevator pitch audiovisual presentati
+ on
+DTSTART;TZID=America/Toronto:20250318T010000
+DTEND;TZID=America/Toronto:20250318T020000
+DTSTAMP:20250330T065055Z
+UID:c3f163f8-bfb1-4fa9-a391-eec1d59f7537
+DESCRIPTION:Scheduled study session for: Work on Five-minute\, policy elev
+ ator pitch audiovisual presentation
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Five-minute\, policy elevator pitch audiovisual presentati
+ on
+DTSTART;TZID=America/Toronto:20250318T090000
+DTEND;TZID=America/Toronto:20250318T100000
+DTSTAMP:20250330T065055Z
+UID:ab46aa4c-c5e9-44a1-b244-f262596f30b5
+DESCRIPTION:Scheduled study session for: Work on Five-minute\, policy elev
+ ator pitch audiovisual presentation
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Five-minute\, policy elevator pitch audiovisual presentati
+ on
+DTSTART;TZID=America/Toronto:20250319T000000
+DTEND;TZID=America/Toronto:20250319T010000
+DTSTAMP:20250330T065055Z
+UID:d1271898-6a8b-4b5f-b00e-bd2bec01a388
+DESCRIPTION:Scheduled study session for: Work on Five-minute\, policy elev
+ ator pitch audiovisual presentation
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Five-minute\, policy elevator pitch audiovisual presentati
+ on
+DTSTART;TZID=America/Toronto:20250319T010000
+DTEND;TZID=America/Toronto:20250319T020000
+DTSTAMP:20250330T065055Z
+UID:7e093c98-f734-4497-b0f2-85f90b768323
+DESCRIPTION:Scheduled study session for: Work on Five-minute\, policy elev
+ ator pitch audiovisual presentation
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Five-minute\, policy elevator pitch audiovisual presentati
+ on
+DTSTART;TZID=America/Toronto:20250319T090000
+DTEND;TZID=America/Toronto:20250319T100000
+DTSTAMP:20250330T065055Z
+UID:c21b6f5e-4d5d-4b71-b1ef-c54cab963a6b
+DESCRIPTION:Scheduled study session for: Work on Five-minute\, policy elev
+ ator pitch audiovisual presentation
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Five-minute\, policy elevator pitch audiovisual presentati
+ on
+DTSTART;TZID=America/Toronto:20250320T000000
+DTEND;TZID=America/Toronto:20250320T010000
+DTSTAMP:20250330T065055Z
+UID:fa61b5ec-197f-420c-8cc8-979c2667a51a
+DESCRIPTION:Scheduled study session for: Work on Five-minute\, policy elev
+ ator pitch audiovisual presentation
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Work on Five-minute\, policy elevator pitch audiovisual presentati
+ on
+DTSTART;TZID=America/Toronto:20250320T010000
+DTEND;TZID=America/Toronto:20250320T020000
+DTSTAMP:20250330T065055Z
+UID:2b2cd2ba-d691-4f5d-a2ec-6fef4821b713
+DESCRIPTION:Scheduled study session for: Work on Five-minute\, policy elev
+ ator pitch audiovisual presentation
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for In class quiz 3
+DTSTART;TZID=America/Toronto:20250320T090000
+DTEND;TZID=America/Toronto:20250320T100000
+DTSTAMP:20250330T065055Z
+UID:60693d97-5fd0-44fb-9690-edfd529bb388
+DESCRIPTION:Scheduled study session for: Study for In class quiz 3
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for In class quiz 3
+DTSTART;TZID=America/Toronto:20250320T100000
+DTEND;TZID=America/Toronto:20250320T110000
+DTSTAMP:20250330T065055Z
+UID:0b8eb31a-ebc7-48cd-94e7-7b06af62a87f
+DESCRIPTION:Scheduled study session for: Study for In class quiz 3
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for In class quiz 3
+DTSTART;TZID=America/Toronto:20250320T110000
+DTEND;TZID=America/Toronto:20250320T120000
+DTSTAMP:20250330T065055Z
+UID:3c5ded75-2e67-4588-af97-20e3d86deecc
+DESCRIPTION:Scheduled study session for: Study for In class quiz 3
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for In class quiz 3
+DTSTART;TZID=America/Toronto:20250321T000000
+DTEND;TZID=America/Toronto:20250321T010000
+DTSTAMP:20250330T065055Z
+UID:7d0177de-8d91-4815-bcb0-a52b4265676d
+DESCRIPTION:Scheduled study session for: Study for In class quiz 3
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for In class quiz 3
+DTSTART;TZID=America/Toronto:20250321T010000
+DTEND;TZID=America/Toronto:20250321T020000
+DTSTAMP:20250330T065055Z
+UID:51004274-51ae-4333-b4cc-156ab4d79bfa
+DESCRIPTION:Scheduled study session for: Study for In class quiz 3
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for In class quiz 3
+DTSTART;TZID=America/Toronto:20250321T090000
+DTEND;TZID=America/Toronto:20250321T100000
+DTSTAMP:20250330T065055Z
+UID:a804704f-c7aa-4963-bb0a-461f4e5491e3
+DESCRIPTION:Scheduled study session for: Study for In class quiz 3
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for Final Exam
+DTSTART;TZID=America/Toronto:20250324T090000
+DTEND;TZID=America/Toronto:20250324T100000
+DTSTAMP:20250330T065055Z
+UID:6f4849f9-5d52-4976-a19c-fa031b9b189f
+DESCRIPTION:Scheduled study session for: Study for Final Exam
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for Final Exam
+DTSTART;TZID=America/Toronto:20250324T100000
+DTEND;TZID=America/Toronto:20250324T110000
+DTSTAMP:20250330T065055Z
+UID:ecdf6387-b4d6-4417-84ca-1b8221ab0ac7
+DESCRIPTION:Scheduled study session for: Study for Final Exam
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for Final Exam
+DTSTART;TZID=America/Toronto:20250324T110000
+DTEND;TZID=America/Toronto:20250324T120000
+DTSTAMP:20250330T065055Z
+UID:4a19b212-e508-4139-8468-57fec5528bb0
+DESCRIPTION:Scheduled study session for: Study for Final Exam
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for Final Exam
+DTSTART;TZID=America/Toronto:20250325T000000
+DTEND;TZID=America/Toronto:20250325T010000
+DTSTAMP:20250330T065055Z
+UID:5d2549e8-4fdb-46db-9065-7bcd247439f7
+DESCRIPTION:Scheduled study session for: Study for Final Exam
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for Final Exam
+DTSTART;TZID=America/Toronto:20250325T010000
+DTEND;TZID=America/Toronto:20250325T020000
+DTSTAMP:20250330T065055Z
+UID:73496b7c-3295-484c-bd78-13600dd9cc9a
+DESCRIPTION:Scheduled study session for: Study for Final Exam
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for Final Exam
+DTSTART;TZID=America/Toronto:20250325T090000
+DTEND;TZID=America/Toronto:20250325T100000
+DTSTAMP:20250330T065055Z
+UID:0b7aa252-2dfd-433e-9d9c-f75df07fc210
+DESCRIPTION:Scheduled study session for: Study for Final Exam
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for Final Exam
+DTSTART;TZID=America/Toronto:20250326T000000
+DTEND;TZID=America/Toronto:20250326T010000
+DTSTAMP:20250330T065055Z
+UID:fa5d11f4-d707-4c32-bc5d-d014a9bbe059
+DESCRIPTION:Scheduled study session for: Study for Final Exam
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for Final Exam
+DTSTART;TZID=America/Toronto:20250326T010000
+DTEND;TZID=America/Toronto:20250326T020000
+DTSTAMP:20250330T065055Z
+UID:c91fb9a0-1aa0-4b74-bfaf-e6c605363ac1
+DESCRIPTION:Scheduled study session for: Study for Final Exam
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for Final Exam
+DTSTART;TZID=America/Toronto:20250326T090000
+DTEND;TZID=America/Toronto:20250326T100000
+DTSTAMP:20250330T065055Z
+UID:06c5c9b7-f45c-4841-8e73-bb2d62cf79b2
+DESCRIPTION:Scheduled study session for: Study for Final Exam
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for Final Exam
+DTSTART;TZID=America/Toronto:20250327T000000
+DTEND;TZID=America/Toronto:20250327T010000
+DTSTAMP:20250330T065055Z
+UID:358e88ef-4e83-439b-b321-6b58cf293bea
+DESCRIPTION:Scheduled study session for: Study for Final Exam
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for Final Exam
+DTSTART;TZID=America/Toronto:20250327T010000
+DTEND;TZID=America/Toronto:20250327T020000
+DTSTAMP:20250330T065055Z
+UID:95a766c2-c10c-4073-a401-4a0049a6d0f2
+DESCRIPTION:Scheduled study session for: Study for Final Exam
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for Final Exam
+DTSTART;TZID=America/Toronto:20250327T090000
+DTEND;TZID=America/Toronto:20250327T100000
+DTSTAMP:20250330T065055Z
+UID:860682ea-9406-4b8f-8f91-564020da01ea
+DESCRIPTION:Scheduled study session for: Study for Final Exam
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for Final Exam
+DTSTART;TZID=America/Toronto:20250328T000000
+DTEND;TZID=America/Toronto:20250328T010000
+DTSTAMP:20250330T065055Z
+UID:91618d26-7a86-4a9c-99a4-f2dcb36af30e
+DESCRIPTION:Scheduled study session for: Study for Final Exam
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for Final Exam
+DTSTART;TZID=America/Toronto:20250328T010000
+DTEND;TZID=America/Toronto:20250328T020000
+DTSTAMP:20250330T065055Z
+UID:5d0c8ea0-c86f-47d7-8d05-dc33ece9ad1c
+DESCRIPTION:Scheduled study session for: Study for Final Exam
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for Final Exam
+DTSTART;TZID=America/Toronto:20250328T090000
+DTEND;TZID=America/Toronto:20250328T100000
+DTSTAMP:20250330T065055Z
+UID:ada1e273-801c-467c-97fe-79552bce820a
+DESCRIPTION:Scheduled study session for: Study for Final Exam
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for Final Exam (take home)
+DTSTART;TZID=America/Toronto:20250324T090000
+DTEND;TZID=America/Toronto:20250324T100000
+DTSTAMP:20250330T065055Z
+UID:44fd8622-aff0-4a6c-a77b-81e503a56e28
+DESCRIPTION:Scheduled study session for: Study for Final Exam (take home)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for Final Exam (take home)
+DTSTART;TZID=America/Toronto:20250324T100000
+DTEND;TZID=America/Toronto:20250324T110000
+DTSTAMP:20250330T065055Z
+UID:0056516f-ae76-45cb-8ff3-89b102a2060b
+DESCRIPTION:Scheduled study session for: Study for Final Exam (take home)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for Final Exam (take home)
+DTSTART;TZID=America/Toronto:20250324T110000
+DTEND;TZID=America/Toronto:20250324T120000
+DTSTAMP:20250330T065055Z
+UID:eedea87b-b11a-4bba-be99-9d4c03e9d383
+DESCRIPTION:Scheduled study session for: Study for Final Exam (take home)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for Final Exam (take home)
+DTSTART;TZID=America/Toronto:20250325T000000
+DTEND;TZID=America/Toronto:20250325T010000
+DTSTAMP:20250330T065055Z
+UID:e7475880-4f1b-4c7f-9b1f-8a19d6ff2dbe
+DESCRIPTION:Scheduled study session for: Study for Final Exam (take home)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for Final Exam (take home)
+DTSTART;TZID=America/Toronto:20250325T010000
+DTEND;TZID=America/Toronto:20250325T020000
+DTSTAMP:20250330T065055Z
+UID:a597a07e-d8b3-4227-933a-f56a9322b401
+DESCRIPTION:Scheduled study session for: Study for Final Exam (take home)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for Final Exam (take home)
+DTSTART;TZID=America/Toronto:20250325T090000
+DTEND;TZID=America/Toronto:20250325T100000
+DTSTAMP:20250330T065055Z
+UID:a34e4c2d-7433-47fb-849c-ba1fd4892500
+DESCRIPTION:Scheduled study session for: Study for Final Exam (take home)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for Final Exam (take home)
+DTSTART;TZID=America/Toronto:20250326T000000
+DTEND;TZID=America/Toronto:20250326T010000
+DTSTAMP:20250330T065055Z
+UID:52c19a01-ea10-405d-93e6-da1c6e552803
+DESCRIPTION:Scheduled study session for: Study for Final Exam (take home)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for Final Exam (take home)
+DTSTART;TZID=America/Toronto:20250326T010000
+DTEND;TZID=America/Toronto:20250326T020000
+DTSTAMP:20250330T065055Z
+UID:2a0a7aa5-d981-4ebb-99d4-50fb205c3296
+DESCRIPTION:Scheduled study session for: Study for Final Exam (take home)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for Final Exam (take home)
+DTSTART;TZID=America/Toronto:20250326T090000
+DTEND;TZID=America/Toronto:20250326T100000
+DTSTAMP:20250330T065055Z
+UID:0d5035f7-71b3-45a2-8d1c-de2e6ad41b30
+DESCRIPTION:Scheduled study session for: Study for Final Exam (take home)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for Final Exam (take home)
+DTSTART;TZID=America/Toronto:20250327T000000
+DTEND;TZID=America/Toronto:20250327T010000
+DTSTAMP:20250330T065055Z
+UID:406df478-d8c3-4ed4-9c48-71fe50dec6f8
+DESCRIPTION:Scheduled study session for: Study for Final Exam (take home)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for Final Exam (take home)
+DTSTART;TZID=America/Toronto:20250327T010000
+DTEND;TZID=America/Toronto:20250327T020000
+DTSTAMP:20250330T065055Z
+UID:f2fd9af5-d273-469d-a583-46ca9a6615f4
+DESCRIPTION:Scheduled study session for: Study for Final Exam (take home)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for Final Exam (take home)
+DTSTART;TZID=America/Toronto:20250327T090000
+DTEND;TZID=America/Toronto:20250327T100000
+DTSTAMP:20250330T065055Z
+UID:ffa6b40c-ce2a-421c-bf28-7627c499317b
+DESCRIPTION:Scheduled study session for: Study for Final Exam (take home)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for Final Exam (take home)
+DTSTART;TZID=America/Toronto:20250328T000000
+DTEND;TZID=America/Toronto:20250328T010000
+DTSTAMP:20250330T065055Z
+UID:7163c8ef-c985-4978-95e1-04da37b548cd
+DESCRIPTION:Scheduled study session for: Study for Final Exam (take home)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for Final Exam (take home)
+DTSTART;TZID=America/Toronto:20250328T010000
+DTEND;TZID=America/Toronto:20250328T020000
+DTSTAMP:20250330T065055Z
+UID:30d5fe8f-0985-42c0-ad23-0428f22e64ad
+DESCRIPTION:Scheduled study session for: Study for Final Exam (take home)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Study for Final Exam (take home)
+DTSTART;TZID=America/Toronto:20250328T090000
+DTEND;TZID=America/Toronto:20250328T100000
+DTSTAMP:20250330T065055Z
+UID:6ecf39b5-ce1f-471c-9989-52d1e9af8f5a
+DESCRIPTION:Scheduled study session for: Study for Final Exam (take home)
 END:VEVENT
 END:VCALENDAR
