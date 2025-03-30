@@ -1,10 +1,17 @@
 {
     "assignments": [
         {
-            "title": "Critical Appraisal 1 (group or individual)",
-            "due_date": "2025-01-20",
-            "due_time": "N/A",
+            "title": "MEDSCIEN 4931G Case Study: Interdisciplinarity and Diversity in Research",
+            "due_date": "2025-03-20",
+            "due_time": "10:30",
             "weight": 5,
+            "difficulty": 6
+        },
+        {
+            "title": "Critical Appraisal 2 (Individual)",
+            "due_date": "2025-02-03",
+            "due_time": "N/A",
+            "weight": 10,
             "difficulty": 0
         },
         {
@@ -12,13 +19,6 @@
             "due_date": "2025-01-14",
             "due_time": "12:00",
             "weight": 15,
-            "difficulty": 0
-        },
-        {
-            "title": "Critical Appraisal 2",
-            "due_date": "2025-02-03",
-            "due_time": "N/A",
-            "weight": 10,
             "difficulty": 0
         },
         {
@@ -95,19 +95,10 @@
     ],
     "schedule": [
         {
-            "name": "MEDSCIEN 4931G: Special Topics in Medical Sciences",
             "days": [
                 "Tuesday"
             ],
             "time": "13:30–15:30",
-            "location": "N/A"
-        },
-        {
-            "name": "MEDSCIEN 4931G: Special Topics in Medical Sciences",
-            "days": [
-                "Friday"
-            ],
-            "time": "N/A",
             "location": "N/A"
         }
     ]

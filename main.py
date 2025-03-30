@@ -1,7 +1,7 @@
 from pdf_parser import extract_text_from_pdf
 from llm_syllabus_parser import extract_schedule_info
 from llm_assignment_parser import extract_assignment_info  # You'll need to create this
-from calendar_generator import create_calendar_events
+from calendar_generator import export_json_to_ics
 from time_blocker import generate_time_blocks
 import json
 import os
@@ -54,9 +54,6 @@ def process_pdf(pdf_path, pdf_type):
     except Exception as e:
         print(f"Unexpected error processing {pdf_path}:", e)
         return
-
-    calendar = create_calendar_events(parsed_data)
-    blocks = generate_time_blocks(calendar)
 
     print(f"\nProcessed: {pdf_path}")
 
@@ -191,10 +188,10 @@ def match_assignments_interactive(course_path: str) -> dict:
                     syllabus_assignment = syllabus_json['assignments'][syllabus_idx - 1]
 
                     # Only update title and difficulty
-                    if 'title' in parsed_assignment:
-                        syllabus_assignment['title'] = parsed_assignment['title']
-                    if 'difficulty' in parsed_assignment:
-                        syllabus_assignment['difficulty'] = parsed_assignment['difficulty']
+                    # Update all relevant fields
+                    for field in ['title', 'difficulty', 'weight', 'due_time']:
+                        if field in parsed_assignment:
+                            syllabus_assignment[field] = parsed_assignment[field]
 
                     matched_assignments.add(assignment_idx)
                     print("\n Successfully matched assignments!")
@@ -207,19 +204,108 @@ def match_assignments_interactive(course_path: str) -> dict:
             print("\n Invalid input format. Please enter two numbers separated by space")
 
     # Save updated syllabus JSON
-    output_path = os.path.join(course_path, "syllabus_matched.json")
+    output_path = ("data/user_pdfs/syllabus_matched.json")
     with open(output_path, 'w', encoding='utf-8') as f:
         json.dump(syllabus_json, f, indent=4, ensure_ascii=False)
     print(f"\nSaved matched assignments to: {output_path}")
     
     return syllabus_json
 
+def edit_schedule():
+    path = "data/user_pdfs/syllabus_matched.json"
+
+    if not os.path.exists(path):
+        print("No matched syllabus file found.")
+        return
+
+    with open(path, "r") as f:
+        data = json.load(f)
+
+    def show_section(name, entries, fields):
+        print(f"\n{name} Entries:")
+        for idx, item in enumerate(entries, 1):
+            summary = " | ".join(f"{field}: {item.get(field, 'N/A')}" for field in fields)
+            print(f"{idx}. {summary}")
+
+    while True:
+        print("\n=== Edit Schedule Menu ===")
+        print("1. Edit Assignments")
+        print("2. Edit Tests")
+        print("3. Edit Class Schedule")
+        print("q. Go back")
+
+        section_choice = input("\nChoose section to edit: ").strip().lower()
+        if section_choice == 'q':
+            break
+
+        if section_choice == '1':
+            section_name = "Assignments"
+            key = "assignments"
+            fields = ["title", "due_date", "due_time"]
+        elif section_choice == '2':
+            section_name = "Tests"
+            key = "tests"
+            fields = ["title", "date", "time"]
+        elif section_choice == '3':
+            section_name = "Schedule"
+            key = "schedule"
+            fields = ["name","days", "time", "location"]
+        else:
+            print("Invalid option.")
+            continue
+
+        items = data.get(key, [])
+        if not items:
+            print(f"No {section_name.lower()} found.")
+            continue
+
+        show_section(section_name, items, fields)
+
+        entry_input = input(f"\nEnter entry number to edit or 'd <num>' to delete, or 'b' to go back: ").strip().lower()
+        if entry_input == 'b':
+            continue
+        elif entry_input.startswith('d '):
+            try:
+                idx = int(entry_input[2:]) - 1
+                if 0 <= idx < len(items):
+                    deleted = items.pop(idx)
+                    print(f"Deleted {section_name[:-1]}: {deleted.get('title', deleted)}")
+                else:
+                    print("Invalid number.")
+            except:
+                print("Invalid delete command.")
+        else:
+            try:
+                idx = int(entry_input) - 1
+                if 0 <= idx < len(items):
+                    entry = items[idx]
+                    print(f"Editing {section_name[:-1]}: {entry.get('title', entry)}")
+                    for field in fields:
+                        current = entry.get(field, "")
+                        new_val = input(f"{field} [{current}]: ").strip()
+                        if new_val:
+                            if field == "days":
+                                entry[field] = [d.strip().capitalize() for d in new_val.split(',')]
+                            else:
+                                entry[field] = new_val
+                    print("Entry updated.")
+                else:
+                    print("Invalid number.")
+            except:
+                print("Invalid input.")
+
+        # Save after each edit
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(data, f, indent=4, ensure_ascii=False)
+            print("Saved changes.")
 
 if __name__ == "__main__":
     while True:
         print("\n=== PDF Processing and Assignment Matching Tool ===")
         print("1. Process PDFs and create JSON files")
         print("2. Manually match assignments")
+        print("3. Edit Schedule")
+        print("4. Compile into Calender")
         print("q. Quit")
         
         choice = input("\nSelect option: ").strip().lower()
@@ -231,5 +317,11 @@ if __name__ == "__main__":
             print("\nFinished processing PDFs")
         elif choice == '2':
             run_manual_matching()
+        elif choice == '3':
+            edit_schedule()
+        elif choice == '4':
+            with open("data/user_pdfs/syllabus_matched.json", "r") as f:  # Replace with your actual file
+                data = json.load(f)
+            export_json_to_ics(data,"course_calendar.ics")
         else:
             print("Invalid option. Please try again.")

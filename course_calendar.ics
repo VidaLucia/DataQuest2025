@@ -1,0 +1,105 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Course Calendar Export//example.com//
+BEGIN:VEVENT
+SUMMARY:Assignment: MEDSCIEN 4931G Case Study: Interdisciplinarity and Div
+ ersity in Research
+DTSTART;TZID=America/Toronto:20250320T103000
+DTEND;TZID=America/Toronto:20250320T113000
+UID:0d333b13-9350-480f-9bd8-2df68995468f
+DESCRIPTION:Assignment due: MEDSCIEN 4931G Case Study: Interdisciplinarity
+  and Diversity in Research
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Assignment: Critical Appraisal 2 (Individual)
+DTSTART;TZID=America/Toronto:20250203T235900
+DTEND;TZID=America/Toronto:20250204T005900
+UID:86efde11-4204-4227-b747-ab95bd7e9887
+DESCRIPTION:Assignment due: Critical Appraisal 2 (Individual)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Assignment: Case Study 1: Interdisciplinarity
+DTSTART;TZID=America/Toronto:20250114T120000
+DTEND;TZID=America/Toronto:20250114T130000
+UID:8addd324-3710-4d93-a285-4b27ad8a8002
+DESCRIPTION:Assignment due: Case Study 1: Interdisciplinarity
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Assignment: Case Study 2: Academic Integrity
+DTSTART;TZID=America/Toronto:20250128T120000
+DTEND;TZID=America/Toronto:20250128T130000
+UID:df93a40f-ef8c-4e93-b5e8-192672cdd1f6
+DESCRIPTION:Assignment due: Case Study 2: Academic Integrity
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Assignment: Case Study 3: Science Communication
+DTSTART;TZID=America/Toronto:20250211T120000
+DTEND;TZID=America/Toronto:20250211T130000
+UID:679902c3-c85c-4d2d-87cf-a55411cc48e8
+DESCRIPTION:Assignment due: Case Study 3: Science Communication
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Assignment: Literature Review
+DTSTART;TZID=America/Toronto:20250303T235900
+DTEND;TZID=America/Toronto:20250304T005900
+UID:6d2fc272-e3ea-4b0e-9582-2ce70fd15c29
+DESCRIPTION:Assignment due: Literature Review
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Assignment: Infographic Presentation
+DTSTART;TZID=America/Toronto:20250331T235900
+DTEND;TZID=America/Toronto:20250401T005900
+UID:dd3bc313-c9a9-40e3-b3ab-41cffedec937
+DESCRIPTION:Assignment due: Infographic Presentation
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Assignment: Reflection 1: Aging Brain
+DTSTART;TZID=America/Toronto:20250124T235900
+DTEND;TZID=America/Toronto:20250125T005900
+UID:5b34dbd8-c587-4178-aff1-8bd9c7a16936
+DESCRIPTION:Assignment due: Reflection 1: Aging Brain
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Assignment: Reflection 2: Science Literature
+DTSTART;TZID=America/Toronto:20250207T235900
+DTEND;TZID=America/Toronto:20250208T005900
+UID:1cf749ab-1ddd-4685-b2dc-fd05d024aee6
+DESCRIPTION:Assignment due: Reflection 2: Science Literature
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Assignment: Reflection 3: EDI
+DTSTART;TZID=America/Toronto:20250228T235900
+DTEND;TZID=America/Toronto:20250301T005900
+UID:fa30e851-9b62-47a3-8292-b5dfb5bd0c94
+DESCRIPTION:Assignment due: Reflection 3: EDI
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Assignment: Reflection 4: Evolving Perspective
+DTSTART;TZID=America/Toronto:20250321T235900
+DTEND;TZID=America/Toronto:20250322T005900
+UID:c06ec158-7103-4db7-95e7-bdbde71e501c
+DESCRIPTION:Assignment due: Reflection 4: Evolving Perspective
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Assignment: Reflection 5: Course Reflection
+DTSTART;TZID=America/Toronto:20250328T235900
+DTEND;TZID=America/Toronto:20250329T005900
+UID:bba1eba2-168f-4ee4-83bd-40ad9f81d4ff
+DESCRIPTION:Assignment due: Reflection 5: Course Reflection
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Test: Final Exam (take home)
+DTSTART;TZID=America/Toronto:20250407T090000
+DTEND;TZID=America/Toronto:20250407T110000
+UID:a72cc531-954b-443d-856c-3277a665024b
+DESCRIPTION:Test: Final Exam (take home)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Class Session
+DTSTART;TZID=America/Toronto:20250107T133000
+DTEND;TZID=America/Toronto:20250107T153000
+UID:479bccd5-9cd3-4eba-b6a9-d84ad98b1f2a
+RRULE:FREQ=WEEKLY;UNTIL=20250430T000000;BYDAY=TU
+LOCATION:N/A
+END:VEVENT
+END:VCALENDAR

@@ -27,11 +27,13 @@ def extract_schedule_info(text):
         - weight (percentage of final grade)
 
     3. The course schedule:
+        - name of the course
         - days of the week (e.g. Monday, Wednesday)
         - time (e.g. 10:30–11:30 or "N/A")
         - location (if mentioned)
 
     Guidelines:
+    - Name of the course should be the course code followed by the course name if possible if there are multiple different course codes
     - The assignment titles should be as descriptive as possible using words from the syllabus
     - If the time is vague or not given, return "N/A"
     - If weight is not given, use your best judgement based on previous assignments of similar name and if not additional information is available return 0
@@ -45,6 +47,7 @@ def extract_schedule_info(text):
       "tests": [...],
       "schedule": [
         {{
+          "name": "4931G: Introduction to Advance Medicine" 
           "days": ["Monday", "Wednesday"],
           "time": "10:30–11:30",
           "location": "Room 101"
