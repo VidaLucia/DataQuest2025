@@ -31,6 +31,7 @@ def extract_schedule_info(text):
         - location (if mentioned)
 
     Guidelines:
+    - The assignment titles should be as descriptive as possible using words from the syllabus
     - If the time is vague or not given, return "N/A"
     - If weight is not given, use your best judgement based on previous assignments of similar name and if not additional information is available return 0
     - The total weight of everything should add up to 100 unless there are bonus marks mentioned

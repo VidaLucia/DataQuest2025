@@ -59,13 +59,7 @@ def process_pdf(pdf_path, pdf_type):
     blocks = generate_time_blocks(calendar)
 
     print(f"\nProcessed: {pdf_path}")
-    print("Calendar Events:")
-    for event in calendar:
-        print(f"{event['date'].strftime('%Y-%m-%d')} - {event['type']}: {event['title']}")
-
-    print("\n📚 Time Blocks:")
-    for block in sorted(blocks, key=lambda b: b['date']):
-        print(f"{block['date'].strftime('%Y-%m-%d')} - {block['title']}")
+    print("All done")
 
 def process_directory(base_path):
     for root, dirs, files in os.walk(base_path):
