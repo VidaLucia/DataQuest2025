@@ -9,7 +9,6 @@ import os
 def process_pdf(pdf_path, pdf_type):
     text = extract_text_from_pdf(pdf_path)
     
-    
     if pdf_type == "syllabus":
         parsed_json = extract_schedule_info(text)
     elif pdf_type == "assignment":
@@ -23,10 +22,37 @@ def process_pdf(pdf_path, pdf_type):
         return
 
     try:
-        parsed_data = json.loads(parsed_json)
+        # If parsed_json is already a dictionary, no need to parse
+
+        if isinstance(parsed_json, dict):
+            parsed_data = parsed_json
+        else:
+            # Clean the JSON string before parsing
+            cleaned_json = parsed_json.strip()
+            # Handle code block wrappers like ```json
+            if cleaned_json.startswith("```"):
+                cleaned_json = cleaned_json.strip("`")
+                if cleaned_json.lower().startswith("json"):
+                    cleaned_json = cleaned_json[4:].strip()
+            cleaned_json = cleaned_json.replace("'", '"')
+            parsed_data = json.loads(cleaned_json)
+        # Save the parsed data to a JSON file
+        output_dir = os.path.join(os.path.dirname(pdf_path), "parsed")
+        os.makedirs(output_dir, exist_ok=True)
+        
+        output_filename = os.path.splitext(os.path.basename(pdf_path))[0] + "_parsed.json"
+        output_path = os.path.join(output_dir, output_filename)
+        
+        with open(output_path, 'w', encoding='utf-8') as f:
+            json.dump(parsed_data, f, indent=4, ensure_ascii=False)
+            print(f"Saved parsed data to: {output_path}")
+
     except json.JSONDecodeError as e:
         print(f"Failed to parse JSON for {pdf_path}:", e)
         print("Raw LLM output was:\n", parsed_json)
+        return
+    except Exception as e:
+        print(f"Unexpected error processing {pdf_path}:", e)
         return
 
     calendar = create_calendar_events(parsed_data)

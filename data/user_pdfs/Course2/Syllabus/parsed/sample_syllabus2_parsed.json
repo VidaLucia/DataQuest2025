@@ -1,0 +1,100 @@
+{
+    "assignments": [
+        {
+            "title": "Critical Appraisal 1",
+            "due_date": "2025-01-20",
+            "due_time": "N/A",
+            "weight": 5
+        },
+        {
+            "title": "Case Study 1",
+            "due_date": "2025-01-14",
+            "due_time": "12:00",
+            "weight": 15
+        },
+        {
+            "title": "Reflection 1",
+            "due_date": "2025-01-24",
+            "due_time": "N/A",
+            "weight": 10
+        },
+        {
+            "title": "Critical Appraisal 2",
+            "due_date": "2025-02-03",
+            "due_time": "N/A",
+            "weight": 10
+        },
+        {
+            "title": "Case Study 2",
+            "due_date": "2025-01-28",
+            "due_time": "12:00",
+            "weight": 0
+        },
+        {
+            "title": "Case Study 3",
+            "due_date": "2025-02-11",
+            "due_time": "12:00",
+            "weight": 0
+        },
+        {
+            "title": "Reflection 2",
+            "due_date": "2025-02-07",
+            "due_time": "N/A",
+            "weight": 10
+        },
+        {
+            "title": "Literature Review",
+            "due_date": "2025-03-03",
+            "due_time": "N/A",
+            "weight": 20
+        },
+        {
+            "title": "Infographic Presentation",
+            "due_date": "2025-03-31",
+            "due_time": "N/A",
+            "weight": 15
+        },
+        {
+            "title": "Reflection 3",
+            "due_date": "2025-02-28",
+            "due_time": "N/A",
+            "weight": 10
+        },
+        {
+            "title": "Reflection 4",
+            "due_date": "2025-03-21",
+            "due_time": "N/A",
+            "weight": 10
+        },
+        {
+            "title": "Reflection 5",
+            "due_date": "2025-03-28",
+            "due_time": "N/A",
+            "weight": 10
+        }
+    ],
+    "tests": [
+        {
+            "title": "Final Exam (take home)",
+            "date": "2025-04-07",
+            "time": "N/A",
+            "weight": 25
+        }
+    ],
+    "schedule": [
+        {
+            "days": [
+                "Tuesday"
+            ],
+            "time": "13:30–15:30",
+            "location": "N/A"
+        },
+        {
+            "days": [
+                "Friday"
+            ],
+            "time": "N/A",
+            "location": "N/A"
+        }
+    ]
+}
