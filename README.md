@@ -1,4 +1,4 @@
-# DataQuest2025 | StudiaVida
+# DataQuest2025 | AI Calendar generator
 
 A smart tool that extracts information from university course PDFs (syllabi and assignments), uses a language model to parse them, and builds a custom calendar with deadlines and scheduled study blocks.
 
