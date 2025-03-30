@@ -78,9 +78,7 @@ def export_json_to_ics(data, output_path, timezone='America/Toronto'):
         try:
             start_str, end_str = time_range.split("–")
             bydays = [day_map[day] for day in days if day in day_map]
-
-            # Use a consistent dummy start date aligned to the first day
-            term_start = datetime(2025, 1, 6)  # Example: first week of Jan
+            term_start = datetime(2025, 1, 6)  # this can be changed
             start_day_idx = list(day_map.keys()).index(days[0])
             first_occurrence = term_start + timedelta(days=(start_day_idx - term_start.weekday()) % 7)
 
@@ -99,7 +97,7 @@ def export_json_to_ics(data, output_path, timezone='America/Toronto'):
             event.add("rrule", {
                 "FREQ": "WEEKLY",
                 "BYDAY": bydays,
-                "UNTIL": tz.localize(datetime(2025, 4, 30))  # End of term
+                "UNTIL": tz.localize(datetime(2025, 4, 9))  # End of term TEMPORARY
             })
             cal.add_component(event)
         except Exception as e:
