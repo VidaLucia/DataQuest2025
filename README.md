@@ -76,6 +76,7 @@ Select 5. Allocates study time #Creates generated_blocks.json with smart 1-hour 
 - Multiple calendar platform support
 - Mobile app development
 - Integration with learning management systems
+- Add in a note parser as well
 
 ### Acknowledgements
 - I would like to sincerely thank Ken Jiang and Alex Caraman for their valuable input and collaboration. Their ideas on integration and our thoughtful discussions greatly contributed to the development of this project.
